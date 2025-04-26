@@ -1,3 +1,1 @@
 # clumsycarrot_project
-
-hello
