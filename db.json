@@ -1,0 +1,100 @@
+{
+    "products": [
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_mother-updated?resMode=sharp2&qlt=85,0&fmt=jpeg&wid=2880&hei=1200",
+        "url": "https://www.bloomingdales.com/shop/mother-denim?id=1206859&tagid=1042801_01_01"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14478949_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "recommended": [
+          {
+            "name": "Theory Scrunched Sleeve Shirtdress",
+            "price": "INR 34,777.00",
+            "url": "https://www.bloomingdales.com/shop/product/theory-scrunched-sleeve-shirtdress?ID=5448272&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos1~xcm_srcCatID~z2910"
+          },
+          {
+            "name": "Bloomingdale's Fine Collection Diamond Milgrain Oval Hoop Earrings in 14K Yellow Gold, 0.50 ct. t.w. - Exclusive",
+            "price": "INR 228,915.00",
+            "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-milgrain-oval-hoop-earrings-in-14k-yellow-gold-0.50-ct.-t.w.-exclusive?ID=3484974&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos2~xcm_srcCatID~z3376"
+          },
+          {
+            "name": "Theory Midi Shirtdress",
+            "price": "INR 39,180.00",
+            "url": "https://www.bloomingdales.com/shop/product/theory-midi-shirtdress?ID=5564432&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos3~xcm_srcCatID~z2910"
+          }
+        ]
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14600518_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Theory Tie Neck Tiered Midi Dress",
+        "price": "INR 34,847.00",
+        "url": "https://www.bloomingdales.com/shop/product/theory-tie-neck-tiered-midi-dress?ID=5553396&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos5~xcm_srcCatID~z2910"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/14420005_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Theory Sleeveless Linen Blend A-Line Wrap Dress",
+        "price": "INR 39,180.00",
+        "url": "https://www.bloomingdales.com/shop/product/theory-sleeveless-linen-blend-a-line-wrap-dress?ID=5448281&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos6~xcm_srcCatID~z2910"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14419991_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Theory Linen Blend Military Mini Dress",
+        "price": "INR 34,777.00",
+        "url": "https://www.bloomingdales.com/shop/product/theory-linen-blend-military-mini-dress?ID=5448282&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos7~xcm_srcCatID~z2910"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14166922_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Bloomingdale's Fine Collection Herringbone Link Three Strand Bracelet in 14K Yellow Gold",
+        "price": "INR 189,295.00",
+        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-herringbone-link-three-strand-bracelet-in-14k-yellow-gold?ID=5228392&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos8~xcm_srcCatID~z3376"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/14665085_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Theory Sleeveless Linen Blend Mini Dress",
+        "price": "INR 34,847.00",
+        "url": "https://www.bloomingdales.com/shop/product/theory-sleeveless-linen-blend-mini-dress?ID=5564354&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos9~xcm_srcCatID~z2910"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/13183377_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Theory Jasneah Admiral Crepe Mini Dress - Exclusive",
+        "price": "INR 30,375.00",
+        "url": "https://www.bloomingdales.com/shop/product/theory-jasneah-admiral-crepe-mini-dress-exclusive?ID=1402639&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos10~xcm_srcCatID~z2910"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/12842502_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Bloomingdale's Fine Collection Certified Colorless Diamond Tennis Bracelet in 14K White Gold 2.0 ct. t.w.",
+        "price": "INR 714,580.00",
+        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-certified-colorless-diamond-tennis-bracelet-in-14k-white-gold-2.0-ct.-t.w.?ID=4725847&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos11~xcm_srcCatID~z3376"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/14077275_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Bloomingdale's Fine Collection Certified Diamond Tennis Bracelet in 14K White Gold, 5.0 ct. t.w.",
+        "price": "Sale INR 905,135.00",
+        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-certified-diamond-tennis-bracelet-in-14k-white-gold-5.0-ct.-t.w.?ID=5181287&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos12~xcm_srcCatID~z3376"
+      },
+      {
+        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+        "name": "Bloomingdale's Fine Collection Diamond Huggie Hoop Earrings in 14K White Gold, 0.5 ct. t.w. - Exclusive",
+        "price": "INR 220,550.00",
+        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos13~xcm_srcCatID~z3376"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14665068_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "name": "Theory Sleeveless Linen Blend Mini Dress",
+      "price": "INR 34,847.00",
+      "url": "https://www.bloomingdales.com/shop/product/theory-sleeveless-linen-blend-mini-dress?ID=5512744&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos14~xcm_srcCatID~z2910"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_makeup1?$subad_pool_36_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+      "url": "https://www.bloomingdales.com/shop/makeup-perfume-beauty/shop-all?id=1191763&tagid=10428017_09_01"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_makeup2?$subad_pool_36_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+      "url": "https://www.bloomingdales.com/buy/sisley-paris/Product_department/Eye%20Makeup%7CFace%20Makeup?tagid=10428019_09_01"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_makeup3?$subad_pool_36_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+      "url": "https://www.bloomingdales.com/buy/bobbi-brown/Product_department/Eye%20Makeup?tagid=10428021_09_01"
+    }
+  ]
+}
