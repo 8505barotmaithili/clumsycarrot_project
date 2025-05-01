@@ -41,6 +41,7 @@ const Title = () => {
               transform: "translateY(-50%)",
               fontSize: "30px",
               color: "gray",
+              
             }}
           />
           <RiShoppingBagLine />

@@ -1,100 +1,408 @@
 {
-    "products": [
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_mother-updated?resMode=sharp2&qlt=85,0&fmt=jpeg&wid=2880&hei=1200",
-        "url": "https://www.bloomingdales.com/shop/mother-denim?id=1206859&tagid=1042801_01_01"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14478949_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "recommended": [
-          {
-            "name": "Theory Scrunched Sleeve Shirtdress",
-            "price": "INR 34,777.00",
-            "url": "https://www.bloomingdales.com/shop/product/theory-scrunched-sleeve-shirtdress?ID=5448272&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos1~xcm_srcCatID~z2910"
-          },
-          {
-            "name": "Bloomingdale's Fine Collection Diamond Milgrain Oval Hoop Earrings in 14K Yellow Gold, 0.50 ct. t.w. - Exclusive",
-            "price": "INR 228,915.00",
-            "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-milgrain-oval-hoop-earrings-in-14k-yellow-gold-0.50-ct.-t.w.-exclusive?ID=3484974&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos2~xcm_srcCatID~z3376"
-          },
-          {
-            "name": "Theory Midi Shirtdress",
-            "price": "INR 39,180.00",
-            "url": "https://www.bloomingdales.com/shop/product/theory-midi-shirtdress?ID=5564432&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos3~xcm_srcCatID~z2910"
-          }
-        ]
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14600518_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Theory Tie Neck Tiered Midi Dress",
-        "price": "INR 34,847.00",
-        "url": "https://www.bloomingdales.com/shop/product/theory-tie-neck-tiered-midi-dress?ID=5553396&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos5~xcm_srcCatID~z2910"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/14420005_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Theory Sleeveless Linen Blend A-Line Wrap Dress",
-        "price": "INR 39,180.00",
-        "url": "https://www.bloomingdales.com/shop/product/theory-sleeveless-linen-blend-a-line-wrap-dress?ID=5448281&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos6~xcm_srcCatID~z2910"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14419991_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Theory Linen Blend Military Mini Dress",
-        "price": "INR 34,777.00",
-        "url": "https://www.bloomingdales.com/shop/product/theory-linen-blend-military-mini-dress?ID=5448282&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos7~xcm_srcCatID~z2910"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14166922_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Bloomingdale's Fine Collection Herringbone Link Three Strand Bracelet in 14K Yellow Gold",
-        "price": "INR 189,295.00",
-        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-herringbone-link-three-strand-bracelet-in-14k-yellow-gold?ID=5228392&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos8~xcm_srcCatID~z3376"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/14665085_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Theory Sleeveless Linen Blend Mini Dress",
-        "price": "INR 34,847.00",
-        "url": "https://www.bloomingdales.com/shop/product/theory-sleeveless-linen-blend-mini-dress?ID=5564354&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos9~xcm_srcCatID~z2910"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/13183377_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Theory Jasneah Admiral Crepe Mini Dress - Exclusive",
-        "price": "INR 30,375.00",
-        "url": "https://www.bloomingdales.com/shop/product/theory-jasneah-admiral-crepe-mini-dress-exclusive?ID=1402639&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos10~xcm_srcCatID~z2910"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/12842502_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Bloomingdale's Fine Collection Certified Colorless Diamond Tennis Bracelet in 14K White Gold 2.0 ct. t.w.",
-        "price": "INR 714,580.00",
-        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-certified-colorless-diamond-tennis-bracelet-in-14k-white-gold-2.0-ct.-t.w.?ID=4725847&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos11~xcm_srcCatID~z3376"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/14077275_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Bloomingdale's Fine Collection Certified Diamond Tennis Bracelet in 14K White Gold, 5.0 ct. t.w.",
-        "price": "Sale INR 905,135.00",
-        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-certified-diamond-tennis-bracelet-in-14k-white-gold-5.0-ct.-t.w.?ID=5181287&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos12~xcm_srcCatID~z3376"
-      },
-      {
-        "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-        "name": "Bloomingdale's Fine Collection Diamond Huggie Hoop Earrings in 14K White Gold, 0.5 ct. t.w. - Exclusive",
-        "price": "INR 220,550.00",
-        "url": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos13~xcm_srcCatID~z3376"
+
+  "products": [
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318",
+      "brand": "Bloomingdale's Fine Collection",
+      "price": "INR 110,275.00",
+      "label": "Sale"
     },
     {
-      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14665068_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
-      "name": "Theory Sleeveless Linen Blend Mini Dress",
-      "price": "INR 34,847.00",
-      "url": "https://www.bloomingdales.com/shop/product/theory-sleeveless-linen-blend-mini-dress?ID=5512744&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zHP_ZONE_A~xcm_choiceId~zcidB38RUX-aa132eed-47a4-4e7f-bbb9-c5e26d6df97d%40H23%40RECOMMENDED%2BFOR%2BYOU%243979%245448272~xcm_pos~zPos14~xcm_srcCatID~z2910"
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14478949_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/theory-scrunched-sleeve-shirtdress?ID=5448272",
+      "brand": "Theory",
+      "price": "INR 34,847.00"
     },
     {
-      "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_makeup1?$subad_pool_36_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=jpeg",
-      "url": "https://www.bloomingdales.com/shop/makeup-perfume-beauty/shop-all?id=1191763&tagid=10428017_09_01"
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14600518_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/theory-midi-shirtdress?ID=5564432",
+      "brand": "Theory",
+      "price": "INR 39,182.00"
     },
     {
-      "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_makeup2?$subad_pool_36_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=jpeg",
-      "url": "https://www.bloomingdales.com/buy/sisley-paris/Product_department/Eye%20Makeup%7CFace%20Makeup?tagid=10428019_09_01"
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14419991_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/theory-linen-blend-military-mini-dress?ID=5448282",
+      "brand": "Theory",
+      "price": "INR 34,780.00"
     },
     {
-      "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_makeup3?$subad_pool_36_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=jpeg",
-      "url": "https://www.bloomingdales.com/buy/bobbi-brown/Product_department/Eye%20Makeup?tagid=10428021_09_01"
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/14115393_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/bcbgmaxazria-crossover-midi-dress?ID=5325185",
+      "brand": "BCBGMAXAZRIA",
+      "price": "INR 21,636.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14810044_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/aqua-pink-blazer-dress-exclusive?ID=5632025",
+      "brand": "AQUA",
+      "price": "INR 21,287.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14796560_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/aigner-genoveva-small-satchel?ID=5627155",
+      "brand": "AIGNER",
+      "price": "INR 42,194.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14440959_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/aigner-cybill-mini-satchel?ID=5454764",
+      "brand": "AIGNER",
+      "price": "INR 37,455.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14141007_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/aqua-cutout-blazer-dress-exclusive?ID=5330256",
+      "brand": "AQUA",
+      "price": "INR 21,287.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/14412663_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/aigner-cara-satchel?ID=5445901",
+      "brand": "AIGNER",
+      "price": "INR 35,110.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14803804_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/aqua-sequin-mini-dress-exclusive?ID=5630029",
+      "brand": "AQUA",
+      "price": "INR 21,287.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14039302_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "link": "https://www.bloomingdales.com/shop/product/aigner-cara-shoulder-bag?ID=5267460",
+      "brand": "AIGNER",
+      "price": "INR 31,098.00"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/8542327_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "brand": "Bloomingdale's Fine Collection",
+      "price": "Sale INR 79,398.00",
+      "link": "https://www.bloomingdales.com/shop/product/diamond-inside-out-hoop-earrings-in-14k-white-gold-0.30-ct.-t.w.-exclusive?ID=1053930"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "brand": "Bloomingdale's Fine Collection",
+      "price": "Sale INR 110,275.00",
+      "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/9389086_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "brand": "Bloomingdale's Fine Collection",
+      "price": "Sale INR 59,548.00",
+      "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-14k-white-gold-tube-hoop-earrings-exclusive?ID=538479"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/11604671_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "brand": "Meira T",
+      "price": "INR 45,874.00",
+      "link": "https://www.bloomingdales.com/shop/product/meira-t-14k-white-gold-diamond-dangle-hoop-earrings?ID=4064992"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/9520859_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "brand": "Bloomingdale's Fine Collection",
+      "price": "Sale INR 61,754.00",
+      "link": "https://www.bloomingdales.com/shop/product/diamond-clover-stud-earrings-in-14k-white-gold-.20-ct.-t.w.-exclusive?ID=2619874"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14026042_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "brand": "Bloomingdale's Fine Collection",
+      "price": "Sale INR 74,987.00",
+      "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-baguette-huggie-hoop-earrings-in-14k-yellow-gold-0.25-ct.-t.w.?ID=5301270"
+    },
+    {
+      "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "brand": "Bloomingdale's Fine Collection",
+      "price": "Sale INR 110,275.00",
+      "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318"
     }
-  ]
+  ],
+   
+      "earings":[
+        {
+          "name": "Diamond Inside Out Hoop Earrings in 14K White Gold, 0.30 ct. t.w. - Exclusive",
+          "brand": "Bloomingdale's Fine Collection",
+          "price": "INR 79,398.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/8542327_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/diamond-inside-out-hoop-earrings-in-14k-white-gold-0.30-ct.-t.w.-exclusive?ID=1053930"
+        },
+        {
+          "name": "Diamond Huggie Hoop Earrings in 14K White Gold, 0.5 ct. t.w. - Exclusive",
+          "brand": "Bloomingdale's Fine Collection",
+          "price": "INR 110,275.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318"
+        },
+        {
+          "name": "14K White Gold Tube Hoop Earrings - Exclusive",
+          "brand": "Bloomingdale's Fine Collection",
+          "price": "INR 59,548.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/9389086_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-14k-white-gold-tube-hoop-earrings-exclusive?ID=538479"
+        },
+        {
+          "name": "14K White Gold Diamond Dangle Hoop Earrings",
+          "brand": "Meira T",
+          "price": "INR 45,874.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/11604671_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/meira-t-14k-white-gold-diamond-dangle-hoop-earrings?ID=4064992"
+        },
+        {
+          "name": "Diamond Clover Stud Earrings in 14K White Gold, 0.20 ct. t.w. - Exclusive",
+          "brand": "Bloomingdale's Fine Collection",
+          "price": "INR 61,754.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/9520859_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+           "link":"https://www.bloomingdales.com/shop/product/diamond-clover-stud-earrings-in-14k-white-gold-.20-ct.-t.w.-exclusive?ID=2619874"
+        },
+        {
+          "name": "Diamond Baguette Huggie Hoop Earrings in 14K Yellow Gold, 0.25 ct. t.w.",
+          "brand": "Bloomingdale's Fine Collection",
+          "price": "INR 74,987.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14026042_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-baguette-huggie-hoop-earrings-in-14k-yellow-gold-0.25-ct.-t.w.?ID=5301270"
+        },
+        {
+          "name": "Large & Small Bead Hoop Earrings in 16K Gold Plated - Exclusive",
+          "brand": "AQUA",
+          "price": "INR 2,911.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14026042_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/aqua-large-small-bead-hoop-earrings-in-16k-gold-plated-exclusive?ID=5176338"
+        },
+        {
+          "name": "Chiara Stone Cluster Imitation Pearl Drop Earrings",
+          "brand": "Nadri",
+          "price": "INR 5,117.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14026042_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/nadri-chiara-stone-cluster-imitation-pearl-drop-earrings?ID=4768794"
+        },
+        {
+          "name": "Cultured Freshwater Pearl Stud Earrings in 14K Yellow Gold - Exclusive",
+          "brand": "Bloomingdale's Fine Collection",
+          "price": "INR 15,438.00 - INR 23,819.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14026042_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+          "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-cultured-freshwater-pearl-stud-earrings-in-14k-yellow-gold-exclusive?ID=3596352"
+        },
+        {
+          "name": "Macaron Cubic Zirconia Double Drop Earrings in 18K Gold Plated",
+          "brand": "Nadri",
+          "price": "INR 7,499.00",
+          "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14026042_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+           "link":"https://www.bloomingdales.com/shop/product/nadri-macaron-cubic-zirconia-double-drop-earrings-in-18k-gold-plated?ID=5344530"
+        }
+      ],
+
+      "giftsection":[
+        {
+        "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_homegifts?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+        "name":"HOME GIFTS"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_ourbestgifts?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+          "name":"OUR BEST GIFTS"
+          },
+          {
+            "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_under100?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+            "name":"GIFTS UNDER $100"
+            },
+            {
+              "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0426-0427_Desktop_luxegifts?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+              "name":"LUXE GIFTS"
+              }
+      ],
+      "bridal":[
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14465432_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"FARM Rio",
+          "price":"INR 240.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14465388_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"FARM Rio",
+          "price":"INR 210.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14411047_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"Self-Portrait",
+          "price":"INR 585.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14207257_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"AQUA",
+          "price":"INR 98.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14473137_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"AQUA",
+          "price":"INR 118.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14381360_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"AQUA",
+          "price":"INR 88.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14706311_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"BRONX AND BANCO",
+          "price":"INR 890.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/14223433_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"BRONX AND BANCO",
+          "price":"INR 595.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14514611_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"AQUA",
+          "price":"INR 128.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14226562_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"Cinq à Sept",
+          "price":"INR 545.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14382842_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":"AQUA",
+          "price":"INR 118.00"
+        },
+        {
+          "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/13422072_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+          "name":" STAUD",
+          "price":"INR 906.00"
+        }
+      ],
+
+   
+      "sections": [
+        {
+          "title": "Occasion Guest Guides",
+          "items": [
+              {
+                  "title": "Dress Codes",
+                  "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_Occasion_Guest_SEO_Guide_Shop_Dress_Codes_LPMAIN_JP_JH_NEW?resMode=sharp2&qlt=85,0&fmt=jpeg&wid=2160&hei=1078",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/destination-wedding-guest?id=1096059"
+              },
+              {
+                  "title": "Cocktail Wedding Guest",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/cocktail-wedding-guest?id=1096160"
+              },
+              {
+                  "title": "Formal Wedding Guest",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/formal-wedding-guest?id=1096161"
+              },
+              {
+                  "title": "Outdoor Wedding Guest",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/outdoor-wedding-guest?id=1096162"
+              },
+              {
+                  "title": "Black Tie Wedding Guest",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/black-tie-wedding-guest?id=1096163"
+              },
+              {
+                  "title": "Semi-Formal Wedding Guest",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/semi-formal-wedding-guest?id=1096164"
+              },
+              {
+                  "title": "Beach Wedding Guest",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/beach-wedding-guest?id=1096165"
+              }
+          ]
+      },
+      {
+          "title": "Shop by Category",
+          "items": [
+              {
+                  "title": "Dresses",
+                  "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_01_Dresses_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+                  "link": "https://www.bloomingdales.com/shop/womens-apparel/designer-dresses?id=21683"
+              },
+              {
+                  "title": "Evening & Formal",
+                  "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_02_Evening_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+                  "link": "https://www.bloomingdales.com/shop/womens-apparel/formal-dresses-evening-gowns?id=1005210"
+              },
+              {
+                  "title": "Jeans",
+                  "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_03_Jeans_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+                  "link": "https://www.bloomingdales.com/shop/womens-apparel/designer-jeans?id=2910"
+              },
+              {
+                  "title": "Coats",
+                  "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_04_Coats_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+                  "link": "https://www.bloomingdales.com/shop/womens-apparel/womens-coats-jackets?id=16961"
+              },
+              {
+                  "title": "Sweaters",
+                  "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_05_Sweaters_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+                  "link": "https://www.bloomingdales.com/shop/womens-apparel/designer-sweaters?id=2912"
+              },
+              {
+                  "title": "Tops",
+                  "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_06_Tops_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=jpeg",
+                  "link": "https://www.bloomingdales.com/shop/womens-apparel/designer-tops-tees?id=2913"
+              }
+          ]
+      },
+      {
+          "title": "Happening Now",
+          "items": [
+            {
+              "title": "Bride To Be",
+              "url": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/bridal-shower-bachelorette-party-dresses?id=1018659"
+            },
+            {
+              "title": "Spring Trends",
+              "url": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/womens-spring-trends?id=1260795"
+            },
+            {
+              "title": "New Arrivals",
+              "url": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/clothing?id=1001037"
+            },
+            {
+              "title": "Vacation Shop",
+              "url": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/beach-wear-summer-beach-essentials/Fob/Women?id=1006858"
+            },
+            {
+              "title": "Wedding Guest",
+              "url": "https://www.bloomingdales.com/shop/womens-apparel/wedding-guest?id=1152159"
+            },
+            {
+              "title": "The Denim Guide",
+              "url": "https://www.bloomingdales.com/c/editorial/women/denim-guide/"
+            },
+            {
+              "title": "Fashion Finds Under $200",
+              "url": "https://www.bloomingdales.com/shop/womens-apparel/fashion-finds-under-200?id=1147959"
+            }
+          ]
+      },
+      {
+          "title": "Wedding Guest",
+          "items": [
+              {
+                  "title": "Cocktail Dresses",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/cocktail-wedding-guest?id=1096160"
+              },
+              {
+                  "title": "Formal Dresses",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/formal-wedding-guest?id=1096161"
+              },
+              {
+                  "title": "Outdoor Dresses",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/outdoor-wedding-guest?id=1096162"
+              },
+              {
+                  "title": "Black Tie Dresses",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/black-tie-wedding-guest?id=1096163"
+              },
+              {
+                  "title": "Beach Dresses",
+                  "link": "https://www.bloomingdales.com/shop/fashion-lookbooks-videos-style-guide/beach-wedding-guest?id=1096165"
+              }
+          ]
+      }
+
+       
+    ]
+ 
 }

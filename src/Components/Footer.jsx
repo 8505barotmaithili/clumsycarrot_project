@@ -1,0 +1,195 @@
+import React from "react";
+import { FaMobileScreenButton } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { SiX } from "react-icons/si";
+
+const Footer = () => {
+  return (
+    <div>
+      <div
+        style={{
+          height: "330px",
+          width: "100%",
+          backgroundColor: "whitesmoke",
+          marginTop: "4%",
+          display: "flex",
+
+          paddingTop: "2%",
+          gap: "70px",
+        }}
+      >
+        <div
+          style={{
+            width: "20%",
+          }}
+        >
+          <h3 style={{ paddingLeft: "13%" }}>CUSTOMER SERVICE</h3>
+          <ul
+            style={{ listStyle: "none", padding: "20px", paddingRight: "6%" }}
+          >
+            <li>1-800-777-0000</li>
+            <br></br>
+            <li>Domestic site FAQs</li>
+            <br></br>
+            <li>FAQs & help</li>
+            <br></br>
+            <li>Visitor services</li>
+            <br></br>
+            <li>Shipping To IN to U.S. site</li>
+          </ul>
+        </div>
+        <div
+          style={{
+            width: "20%",
+          }}
+        >
+          <h3 style={{ paddingLeft: "5%" }}>YOUR ORDER</h3>
+          <ul style={{ listStyle: "none", padding: "20px" }}>
+            <li>1-800-777-0000</li>
+            <br></br>
+            <li>Domestic site FAQs</li>
+            <br></br>
+            <li>FAQs & help</li>
+          </ul>
+        </div>
+        <div
+          style={{
+            width: "20%",
+          }}
+        >
+          <h3 style={{ paddingLeft: "5%" }}>ABOUT BLOOMINGDALE'S</h3>
+          <ul style={{ listStyle: "none", padding: "20px" }}>
+            <li>About us</li>
+            <br></br>
+            <li>b the change</li>
+            <br></br>
+            <li>Careers</li>
+            <br></br>
+            <li>Sustainability</li>
+          </ul>
+        </div>
+        <div
+          style={{
+            width: "20%",
+          }}
+        >
+          <h3 style={{ paddingLeft: "5%" }}>Follow Us</h3>
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              gap: "15px",
+              padding: 0,
+              paddingLeft: "4%",
+              marginTop: "9%",
+            }}
+          >
+            <li
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "18px",
+                cursor: "pointer",
+              }}
+            >
+              <FaMobileScreenButton />
+            </li>
+            <li
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "18px",
+                cursor: "pointer",
+              }}
+            >
+              <FaInstagram />
+            </li>
+            <li
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "18px",
+                cursor: "pointer",
+              }}
+            >
+              <FaPinterestP />
+            </li>
+            <li
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "18px",
+                cursor: "pointer",
+              }}
+            >
+              <FaFacebook />
+            </li>
+            <li
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "18px",
+                cursor: "pointer",
+              }}
+            >
+              <SiX />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <p style={{ textAlign: "center" }}>
+          Terms of Use &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Privacy
+          &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Cookie Preferences
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Do Not Sell or Share My Personal
+          Information &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Interest Based Ads
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Customer Bill of Rights
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Product Recalls
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Pricing Policy
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Accessibility <br></br>
+          <p>
+            {" "}
+            ©2025 Bloomingdale's. 1000 Third Avenue New York, NY 10022. Request
+            our corporate name and address.<br></br>{" "}
+            <p>Like No Other Store in the World</p>
+          </p>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
