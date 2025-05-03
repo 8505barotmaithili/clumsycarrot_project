@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const Recommand = () => {
   const [bridalItems, setBridalItems] = useState([]);
@@ -86,11 +87,17 @@ const Recommand = () => {
                 borderRadius: "1rem",
               }}
             >
-              <img
-                src={item.image}
-                alt={item.name}
-                style={{ height: "300px", width: "100%", objectFit: "cover" }}
-              />
+              <a
+                href={`/recomdesc/${item.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  style={{ height: "300px", width: "100%", objectFit: "cover" }}
+                />
+              </a>
               <div className="p-2">
                 <h5 className="text-sm font-medium">
                   {item.brand}

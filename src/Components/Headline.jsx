@@ -63,7 +63,13 @@ const Headline = () => {
       >
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           <SwiperSlide>
-            <span style={{ color: "white", fontSize: "12px" }}>
+            <span
+              style={{
+                color: "white",
+
+                fontSize: "12px",
+              }}
+            >
               Theory Semi-Annual Best Customer Event: Take up to $250 off
               qualifying purchases. Ends 4/27. INFO / SHOP NOW
             </span>

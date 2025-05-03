@@ -1,6 +1,7 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
-import { RiShoppingBagLine } from "react-icons/ri";
+import { RiShoppingBagFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const Title = () => {
   return (
     <div>
@@ -36,15 +37,23 @@ const Title = () => {
           <CiSearch
             style={{
               position: "absolute",
-              top: "39%",
-              left: "-195px",
+              top: "48%",
+              left: "-300px",
               transform: "translateY(-50%)",
               fontSize: "30px",
               color: "gray",
-              
             }}
           />
-          <RiShoppingBagLine />
+          <Link
+            to={"/shopcart"}
+            style={{
+              color: "#DB9C60",
+              fontSize: "23px",
+            }}
+          >
+            {" "}
+            <RiShoppingBagFill />
+          </Link>
         </div>
       </div>
     </div>

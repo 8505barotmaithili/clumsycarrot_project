@@ -15,6 +15,11 @@ import Sale from "../Pages/Sale";
 import Designer from "../Pages/Designer";
 import Editorial from "../Pages/Editorial";
 import Gifts from "../Pages/Gifts";
+import Recomdesc from "../descriptionpages/Recomdesc";
+import Shopcart from "../Pages/Shopcart";
+import Services from "../Pages/Services";
+import Guestdesc from "../descriptionpages/Guestdesc";
+import Beachdesc from "../descriptionpages/Beachdesc";
 
 const Allroutes = () => {
   return (
@@ -22,6 +27,7 @@ const Allroutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/women" element={<Women />} />
         <Route path="/handbags" element={<Handbags />} />
         <Route path="/jewelry" element={<Jewelry />} />
@@ -30,10 +36,14 @@ const Allroutes = () => {
         <Route path="/kids" element={<Kids />} />
         <Route path="/decor" element={<Decor />} />
         <Route path="/sale" element={<Sale />} />
-
         <Route path="/designers" element={<Designer />} />
         <Route path="/editorial" element={<Editorial />} />
         <Route path="/gifts" element={<Gifts />} />
+        <Route path="/recomdesc/:id" element={<Recomdesc />} />
+        <Route path="/shopcart" element={<Shopcart />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/guestdesc" element={<Guestdesc />} />
+        <Route path="/beachdesc/:id" element={<Beachdesc />} />
       </Routes>
     </div>
   );

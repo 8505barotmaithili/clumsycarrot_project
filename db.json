@@ -2,115 +2,147 @@
 
   "products": [
     {
+      "id":"1",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318",
       "brand": "Bloomingdale's Fine Collection",
       "price": "INR 110,275.00",
-      "label": "Sale"
+      "label": "Sale",
+      "images": [
+        
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/12162651_fpx.tif?op_sharpen=1&wid=82&fit=fit,1&fmt=webp",
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/12162650_fpx.tif?op_sharpen=1&wid=82&fit=fit,1&fmt=webp",
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/12162648_fpx.tif?op_sharpen=1&wid=82&fit=fit,1&fmt=webp"
+      ]
     },
     {
+      "id":"2",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14478949_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/theory-scrunched-sleeve-shirtdress?ID=5448272",
       "brand": "Theory",
-      "price": "INR 34,847.00"
+      "price": "INR 34,847.00",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14478949_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
+      "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14478950_fpx.tif?op_sharpen=1&wid=82&fit=fit,1&fmt=webp",
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14478951_fpx.tif?op_sharpen=1&wid=82&fit=fit,1&fmt=webp",
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14478956_fpx.tif?op_sharpen=1&wid=82&fit=fit,1&fmt=webp"
+      ]
     },
     {
+      "id":"3",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14600518_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/theory-midi-shirtdress?ID=5564432",
       "brand": "Theory",
       "price": "INR 39,182.00"
     },
     {
+      "id":"4",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14419991_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/theory-linen-blend-military-mini-dress?ID=5448282",
       "brand": "Theory",
       "price": "INR 34,780.00"
     },
     {
+      "id":"5",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/14115393_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/bcbgmaxazria-crossover-midi-dress?ID=5325185",
       "brand": "BCBGMAXAZRIA",
       "price": "INR 21,636.00"
     },
     {
+      "id":"6",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14810044_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/aqua-pink-blazer-dress-exclusive?ID=5632025",
       "brand": "AQUA",
       "price": "INR 21,287.00"
     },
     {
+      "id":"7",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14796560_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/aigner-genoveva-small-satchel?ID=5627155",
       "brand": "AIGNER",
       "price": "INR 42,194.00"
     },
     {
+      "id":"8",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14440959_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/aigner-cybill-mini-satchel?ID=5454764",
       "brand": "AIGNER",
       "price": "INR 37,455.00"
     },
     {
+      "id":"9",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14141007_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/aqua-cutout-blazer-dress-exclusive?ID=5330256",
       "brand": "AQUA",
       "price": "INR 21,287.00"
     },
     {
+      "id":"10",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/14412663_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/aigner-cara-satchel?ID=5445901",
       "brand": "AIGNER",
       "price": "INR 35,110.00"
     },
     {
+      "id":"11",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14803804_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/aqua-sequin-mini-dress-exclusive?ID=5630029",
       "brand": "AQUA",
       "price": "INR 21,287.00"
     },
     {
+      "id":"12",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14039302_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "link": "https://www.bloomingdales.com/shop/product/aigner-cara-shoulder-bag?ID=5267460",
       "brand": "AIGNER",
       "price": "INR 31,098.00"
     },
     {
+      "id":"13",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/8542327_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "brand": "Bloomingdale's Fine Collection",
       "price": "Sale INR 79,398.00",
       "link": "https://www.bloomingdales.com/shop/product/diamond-inside-out-hoop-earrings-in-14k-white-gold-0.30-ct.-t.w.-exclusive?ID=1053930"
     },
     {
+      "id":"14",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "brand": "Bloomingdale's Fine Collection",
       "price": "Sale INR 110,275.00",
       "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-huggie-hoop-earrings-in-14k-white-gold-0.5-ct.-t.w.-exclusive?ID=3514318"
     },
     {
+      "id":"15",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/9389086_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "brand": "Bloomingdale's Fine Collection",
       "price": "Sale INR 59,548.00",
       "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-14k-white-gold-tube-hoop-earrings-exclusive?ID=538479"
     },
     {
+      "id":"16",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/11604671_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "brand": "Meira T",
       "price": "INR 45,874.00",
       "link": "https://www.bloomingdales.com/shop/product/meira-t-14k-white-gold-diamond-dangle-hoop-earrings?ID=4064992"
     },
     {
+      "id":"17",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/9520859_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "brand": "Bloomingdale's Fine Collection",
       "price": "Sale INR 61,754.00",
       "link": "https://www.bloomingdales.com/shop/product/diamond-clover-stud-earrings-in-14k-white-gold-.20-ct.-t.w.-exclusive?ID=2619874"
     },
     {
+      "id":"18",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14026042_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "brand": "Bloomingdale's Fine Collection",
       "price": "Sale INR 74,987.00",
       "link": "https://www.bloomingdales.com/shop/product/bloomingdales-fine-collection-diamond-baguette-huggie-hoop-earrings-in-14k-yellow-gold-0.25-ct.-t.w.?ID=5301270"
     },
     {
+      "id":"19",
       "image": "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/10843372_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=jpeg&wid=256&hei=320",
       "brand": "Bloomingdale's Fine Collection",
       "price": "Sale INR 110,275.00",
@@ -403,6 +435,357 @@
       }
 
        
-    ]
- 
-}
+    ],
+
+      "services":
+      [
+        {
+          "url": "https://www.bloomingdales.com/c/stylists/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-stylists-hub-new.jpg",
+          "title": "STYLISTS",
+          "description": "Our team is here for all your styling needs, whether it's help finding one amazing look for an upcoming event or a complete wardrobe update.",
+          "cta": "Book an appointment",
+          "howItWorksUrl": "https://www.bloomingdales.com/c/stylists/#how-it-works",
+          "appointmentUrl": "https://www.bloomingdales.com/c/stylists/"
+        },
+        {
+          "url": "https://www.bloomingdales.com/b/about-us/shopping/beauty-services/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-beauty-services-new.jpg",
+          "title": "BEAUTY SERVICES",
+          "description": "Learn how to recreate the latest looks, get glam for a special event or discover the perfect products for your complexion. We offer makeovers, facials, skincare consultations and more.",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/b/about-us/shopping/personal-shopper/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-personal-shopping-new.jpg",
+          "title": "PERSONAL SHOPPERS",
+          "description": "For the most exclusive shopping experience, get one-on-one, 24/7 assistance from our pros in a private consultation space and fitting room. Available by appointment only.",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/b/about-us/shopping/corporate-business-gifts/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-corporate-gifts-new.jpg",
+          "title": "CORPORATE GIFTS",
+          "description": "Our gifting experts can help you find the best items to show your appreciation for valued employees and important clients. Plus, most bulk orders qualify for discounts.",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/b/about-us/shopping/design-trade-program/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-design-trade-program-new.jpg",
+          "title": "DESIGN TRADE PROGRAM",
+          "description": "For interior designers, architects and licensed contractors, our experts offer personalized help selecting products, placing orders, and coordinating deliveries. Plus, we offer a generous trade discount, as well as Loyallist points on purchases.",
+          "cta": "Book an appointment",
+          "howItWorksUrl": "https://www.bloomingdales.com/c/home-stylists/#how-it-works",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/c/home-stylists/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-home-stylists-new.jpg",
+          "title": "HOME STYLISTS",
+          "description": "Our team can shop the store with you to curate your home from scratch or help you update with finishing touches, from luxury dinnerware to bedding and bath linens, rugs and custom furniture.",
+          "cta": "Book an appointment",
+          "howItWorksUrl": "https://www.bloomingdales.com/c/home-stylists/#how-it-works",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/b/about-us/shopping/alterations-and-tailoring/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-tailoring-and-alterations-new.jpg",
+          "title": "TAILORING & ALTERATIONS",
+          "description": "Our highly skilled team of tailors ensure a perfect fit for every look from denim to custom suiting in the style and fabric of your choice.",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/b/about-us/shopping/fashion-studio-styling-services/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/ss-studio-services-new.jpg",
+          "title": "STUDIO SERVICES",
+          "description": "We support designers, costumers and stylists in finding perfect wardrobes and props for feature films, commercials and TV programs. Personal and wardrobing stylists can borrow merchandise for fittings for up to 7 days, and incur no charges until their client decides what to keep.",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/wedding-registry",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/2025_Services_Registry_2x.jpg",
+          "title": "THE REGISTRY",
+          "description": "Find everything you need for the big day and beyond, from exclusive discounts to dedicated personal consultants. We also offer helpful tools, checklists and guides including our handy Thank You Card manager.",
+          "cta": "Book an appointment",
+          "howItWorksUrl": "https://widgets.stores-bloomingdales.com/stores/the-registry/services/landing_page/components/landing?%27,%27Salesfloor%27,%27menubar,status,scrollbars,width=575,height=800,resizable=1%27);window.utag&tagid=1062501_01_02",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        },
+        {
+          "url": "https://www.bloomingdales.com/b/about-us/shopping/international-visitor-services/",
+          "image": "https://www.bloomingdales.com/b/fashion/images/projects/about-us/shopping/shopping-services/visitor-services-hub.jpg",
+          "title": "VISITOR SERVICES",
+          "description": "Make the most of your visit with special discount offers, store directories in various languages, translators, a coat check, concierge services and more.",
+          "appointmentUrl": "https://www.bloomingdales.com/b/about-us/appointment-scheduling-in-store-services/#"
+        }
+      ],
+  
+    
+          
+            "guestGuide": [
+              {
+                "id":"1",
+                "image": "/src/assets/first.png",
+                "title":"BEACH & DESTINATION"
+              },
+              {
+                "id":"2",
+                "image": "/src/assets/second.png",
+                "title":"COCKTAIL"
+              },
+              {
+                "id":"3",
+                "image": "/src/assets/third.png",
+                "title": "FORMAL & BLACK TIE"
+              }
+            ],
+            "categories": [
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_01_Dresses_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Dresses"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_02_Evening_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Evening & Formal"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_03_Jeans_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Jeans & Denim"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_04_Coats_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Coats & Jackets"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_05_Sweaters_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Sweaters"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_06_Tops_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Tops & Tees"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_07_Loungewear_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Loungewear"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_08_Skirts_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Skirts"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_09_Sleepwear_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Sleepwear"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_10_Pants_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Pants"
+              },
+              {
+                "image": "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_Essentials_12_Lingerie_MK:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title": "Lingerie"
+              }
+            ],
+            "labels":[
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_04WK1_RTW_BrandSpotlight-4:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title":"CINQ Á SEPT"
+              },
+              {
+                 "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_04WK1_RTW_BrandSpotlight-3:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title":"RAG & BONE"
+              },
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_04WK1_RTW_BrandSpotlight-2:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title":"FARM RIO"
+              },
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_04WK1_RTW_BrandSpotlight-1:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                "title":"L'AGENCE"
+              }
+
+            ],
+            "happening":[
+              
+                {
+                  "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_04WK2_Wedding_Bride-To-Be:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                  "title":"BRIDE TO BE"
+                },
+                {
+                   "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_RTW_FEAT_SHOPS_SPRING_TRENDS_JP:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                  "title":"SPRING TRENDS"
+                },
+                {
+                  "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_02WK2_RTW_Site_Happening_Now_02_New_Arrivals_MK_JH:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                  "title":"NEW ARRIVALS"
+                },
+                {
+                  "image":"https://images.bloomingdalesassets.com/is/image/MacysInc/2025_02WK2_RTW_Site_Happening_Now_03_Vacation_Shop_MK_JH:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp",
+                  "title":"VACATION SHOP"
+                }
+
+            ],
+            "trending":[
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14432936_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+                "title":"FARM RIO",
+                "price":"INR 210.00"
+              },
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/14304113_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+                "title":"FARM RIO",
+                "price":"INR 148.00"
+              },
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/13809074_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+                "title":"FARM RIO",
+                "price":"INR 240.00"
+              },
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/13976852_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+                "title":"FARM RIO",
+                "price":"INR 142.00"
+              },
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14233686_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+                "title":"FARM RIO",
+                "price":"INR 85.00"
+              },
+              {
+                "image":"https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14664762_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+                "title":"FARM RIO",
+                "price":"INR 220.00"
+              }
+
+
+            ],
+           
+            "data": [
+    {
+      "id":"1",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14316994_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Floral Chiffon Flutter Sleeve Maxi Dress - Exclusive",
+      "price": "INR 10,297.00",
+      "rating": 7,
+      "tag": "Best Seller"
+    },
+    {
+      "id":"2",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14499394_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "PatBO",
+      "title": "Papillon Tulle Long Dress",
+      "price": "INR 56,723.00"
+    },
+    {
+      "id":"3",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14381437_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 11,170.00",
+      "rating": 8,
+      "tag": "Best Seller"
+    },
+    {
+      "id":"4",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14515424_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    },
+    {
+      "id":"5",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14301721_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    },
+    {
+      "id":"6",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14514624_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    }
+    ,
+    {
+      "id":"7",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/13559519_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    }
+    ,
+    {
+      "id":"8",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14514079_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    }
+    , {
+      "id":"9",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14311421_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    }
+    , {
+      "id":"10",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14125970_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    }
+    , {
+      "id":"11",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14591424_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller"
+    }
+   
+  ]
+          
+          
+                
+        
+        
+  
+  }

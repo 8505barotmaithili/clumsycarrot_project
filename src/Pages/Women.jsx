@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Headline from "../Components/Headline";
 import Small_nav from "../Components/Small_nav";
 import Title from "../Components/Title";
@@ -6,27 +7,56 @@ import Navbar from "../Components/Navbar";
 import Recommand from "../Components/Recommand";
 import RecentlyViewedSlider from "../Components/Recentlyview";
 import Footer from "../Components/Footer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Link } from "react-router-dom";
+const Women = () => {
+  const [guestGuide, setGuestGuide] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [label, setlabels] = useState([]);
+  const [happening, sethappenig] = useState([]);
+  const [bridalItems, setBridalItems] = useState([]);
 
-const WomenPage = () => {
-  const featuredLooks = [
-    {
-      items: ["https://via.placeholder.com/100x100?text=Sandal"],
-    },
-    {
-      items: ["https://via.placeholder.com/100x100?text=Bag"],
-    },
-  ];
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/guestGuide")
+      .then((res) => setGuestGuide(res.data));
+    axios
+      .get("http://localhost:3000/categories")
+      .then((res) => setCategories(res.data));
+    axios
+      .get("http://localhost:3000/labels")
+      .then((res) => setlabels(res.data));
+
+    axios
+      .get("http://localhost:3000/happening")
+      .then((res) => sethappenig(res.data));
+
+    axios
+      .get("http://localhost:3000/trending")
+      .then((res) => setBridalItems(res.data));
+  }, []);
+
   return (
     <div>
       <Headline />
       <Small_nav />
       <Title />
       <Navbar />
-      <hr></hr>
-      <div style={{ display: "flex", fontFamily: "Arial, sans-serif" }}>
-        {" "}
+      <div
+        style={{
+          display: "flex",
+          fontFamily: "Arial, sans-serif",
+
+          width: "90%",
+          margin: "auto",
+        }}
+      >
         {/* Sidebar */}
-        <div style={{ width: "250px", padding: "20px" }}>
+
+        <div style={{ width: "270px", padding: "30px" }}>
           <p style={{ fontSize: "14px", color: "gray" }}>/ Women</p>
           <h2 style={{ fontSize: "24px", fontWeight: "bold" }}>WOMEN</h2>
           <h4 style={{ fontSize: "14px", fontWeight: "bold" }}>
@@ -40,19 +70,6 @@ const WomenPage = () => {
           <p>Shorts & Skirts</p>
           <p>Swimsuits & Cover-Ups</p>
           <p>Tops & Tees</p>
-          <h4
-            style={{ fontSize: "14px", fontWeight: "bold", marginTop: "20px" }}
-          >
-            L'AGENCE: 25% OFF SPRING STYLES
-          </h4>
-          <h4 style={{ fontSize: "14px", fontWeight: "bold" }}>
-            LINGERIE: EARN A $25 REWARD FOR EVERY $100
-          </h4>
-          <h4
-            style={{ fontSize: "14px", fontWeight: "bold", marginTop: "20px" }}
-          >
-            CLOTHING
-          </h4>
           <p>Shop All</p>
           <p>Active & Workout</p>
           <p>Blazers</p>
@@ -130,319 +147,185 @@ const WomenPage = () => {
           <p>Veronica Beard</p>
           <p> Designer Boutique</p>
         </div>
+
         {/* Main Content */}
-        <div style={{ flex: 1, padding: "20px" }}>
-          {/* Guide Section */}
+        <div style={{ flex: 1, padding: "30px" }}>
+          {/* Guest Guide Section */}
           <h2
             style={{
-              textAlign: "center",
               fontSize: "28px",
               fontWeight: "bold",
               marginBottom: "30px",
+              textAlign: "center",
             }}
           >
             THE WELL-DRESSED GUEST GUIDE
           </h2>
-
+          <br></br>
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
+              flexWrap: "wrap",
               gap: "20px",
+              justifyContent: "center",
+              marginBottom: "50px",
             }}
           >
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="https://via.placeholder.com/300x450?text=Beach"
-                alt="Beach"
-                style={{ width: "100%" }}
-              />
-              <p style={{ marginTop: "10px", textDecoration: "underline" }}>
-                BEACH & DESTINATION
-              </p>
-            </div>
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="https://via.placeholder.com/300x450?text=Cocktail"
-                alt="Cocktail"
-                style={{ width: "100%" }}
-              />
-              <p style={{ marginTop: "10px", textDecoration: "underline" }}>
-                COCKTAIL
-              </p>
-            </div>
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="https://via.placeholder.com/300x450?text=Formal"
-                alt="Formal"
-                style={{ width: "100%" }}
-              />
-              <p style={{ marginTop: "10px", textDecoration: "underline" }}>
-                FORMAL & BLACK TIE
-              </p>
-            </div>
-          </div>
-
-          {/* SHOP BY CATEGORY */}
-          <div
-            style={{
-              background: "#f0f09a",
-              marginTop: "40px",
-              padding: "20px",
-            }}
-          >
-            <h2 style={{ fontWeight: "bold", fontSize: "22px" }}>
-              SHOP BY CATEGORY
-            </h2>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "30px",
-                marginTop: "20px",
-              }}
-            >
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Dresses"
-                  alt="Dresses"
-                />
-                <p>Dresses</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Evening"
-                  alt="Evening"
-                />
-                <p>Evening & Formal</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Jeans"
-                  alt="Jeans"
-                />
-                <p>Jeans & Denim</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Jackets"
-                  alt="Jackets"
-                />
-                <p>Coats & Jackets</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Sweaters"
-                  alt="Sweaters"
-                />
-                <p>Sweaters</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Tops"
-                  alt="Tops"
-                />
-                <p>Tops & Tees</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Loungewear"
-                  alt="Loungewear"
-                />
-                <p style={{ textDecoration: "underline" }}>Loungewear</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Skirts"
-                  alt="Skirts"
-                />
-                <p>Skirts</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Robes"
-                  alt="Robes"
-                />
-                <p>Sleepwear & Robes</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Leggings"
-                  alt="Leggings"
-                />
-                <p>Pants & Leggings</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Swim"
-                  alt="Swim"
-                />
-                <p>Swimsuits & Coverups</p>
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  src="https://via.placeholder.com/100x130?text=Lingerie"
-                  alt="Lingerie"
-                />
-                <p>Lingerie & Shapewear</p>
-              </div>
-            </div>
-          </div>
-
-          {/* LABELS WE LOVE */}
-          <div
-            style={{
-              background: "#f0f09a",
-              marginTop: "30px",
-              padding: "20px",
-            }}
-          >
-            <h2 style={{ fontWeight: "bold", fontSize: "22px" }}>
-              LABELS WE LOVE
-            </h2>
-            <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
-              <img
-                src="https://via.placeholder.com/220x300?text=Label+1"
-                alt="Label1"
-                style={{ width: "220px" }}
-              />
-              <img
-                src="https://via.placeholder.com/220x300?text=Label+2"
-                alt="Label2"
-                style={{ width: "220px" }}
-              />
-              <img
-                src="https://via.placeholder.com/220x300?text=Label+3"
-                alt="Label3"
-                style={{ width: "220px" }}
-              />
-              <img
-                src="https://via.placeholder.com/220x300?text=Label+4"
-                alt="Label4"
-                style={{ width: "220px" }}
-              />
-            </div>
-          </div>
-
-          {/* HAPPENING NOW section */}
-          <div
-            style={{
-              background: "#f0f09a",
-              marginTop: "30px",
-              padding: "20px",
-            }}
-          >
-            <h2 style={{ fontWeight: "bold", fontSize: "22px" }}>
-              HAPPENING NOW
-            </h2>
-            <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
-              {[
-                "https://via.placeholder.com/220x300?text=Happening+1",
-                "https://via.placeholder.com/220x300?text=Happening+2",
-                "https://via.placeholder.com/220x300?text=Happening+3",
-                "https://via.placeholder.com/220x300?text=Happening+4",
-              ].map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`Happening ${index + 1}`}
-                  style={{ width: "220px" }}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Trending now: FARM RIO */}
-          <div
-            style={{
-              background: "#f0f09a",
-              marginTop: "30px",
-              padding: "20px",
-            }}
-          >
-            <h2 style={{ fontWeight: "bold", fontSize: "22px" }}>
-              Trending now: FARM RIO
-            </h2>
-            <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
-              {[
-                "https://via.placeholder.com/220x300?text=Happening+1",
-                "https://via.placeholder.com/220x300?text=Happening+2",
-                "https://via.placeholder.com/220x300?text=Happening+3",
-                "https://via.placeholder.com/220x300?text=Happening+4",
-              ].map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`Happening ${index + 1}`}
-                  style={{ width: "220px" }}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Featured looks */}
-          <div
-            style={{
-              background: "#f0f09a",
-              marginTop: "30px",
-              padding: "20px",
-            }}
-          >
-            <h2 style={{ fontWeight: "bold", fontSize: "22px" }}>
-              FEATURED LOOKS
-            </h2>
-
-            <div
-              style={{
-                display: "flex",
-                gap: "20px",
-                marginTop: "20px",
-                overflowX: "auto",
-              }}
-            >
-              {featuredLooks.map((look, index) => (
-                <div
-                  key={index}
-                  style={{
-                    background: "#fff",
-                    borderRadius: "10px",
-                    padding: "20px",
-                    flex: "0 0 45%",
-                    display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    minHeight: "400px",
+            {guestGuide.map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  textAlign: "center",
+                  maxWidth: "358px",
+                }}
+              >
+                <Link
+                  to="/guestdesc"
+                  state={{
+                    apiUrl:
+                      index === 0
+                        ? "http://localhost:3000/data"
+                        : "http://localhost:3000/trending",
                   }}
                 >
-                  {look.items.map((item, i) => (
-                    <img
-                      key={i}
-                      src={item}
-                      alt={`Item ${i + 1}`}
-                      style={{ width: "80px", margin: "10px auto" }}
-                    />
-                  ))}
-
-                  <button
-                    style={{
-                      marginTop: "auto",
-                      width: "100%",
-                      background: "#000",
-                      color: "#fff",
-                      padding: "12px 0",
-                      border: "none",
-                      borderRadius: "30px",
-                      fontWeight: "bold",
-                      cursor: "pointer",
-                    }}
-                  >
-                    SHOP THE LOOK
-                  </button>
-                </div>
-              ))}
-            </div>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    style={{ width: "100%", cursor: "pointer" }}
+                  />
+                </Link>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    marginTop: "10px",
+                    fontSize: "13px",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {item.title}
+                </p>
+              </div>
+            ))}
           </div>
+          <br></br>
+
+          {/* Shop by Category Section */}
+          <h2
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            SHOP BY CATEGORY
+          </h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))",
+              gap: "30px",
+              textAlign: "center",
+            }}
+          >
+            {categories.map((item, index) => (
+              <div key={index}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  style={{
+                    width: "100%",
+                    maxWidth: "290px",
+                    margin: "0 auto",
+                    borderRadius: "4px",
+                  }}
+                />
+                <p style={{ marginTop: "10px", fontSize: "13px" }}>
+                  {item.title}
+                </p>
+              </div>
+            ))}
+          </div>
+          <br></br>
+          <br></br>
+          {/* LABELS WE LOVE */}
+          <h2
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+              textAlign: "center",
+            }}
+          >
+            LABELS WE LOVE
+          </h2>
+          <br></br>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(256px, 1fr))",
+              gap: "30px",
+              textAlign: "center",
+            }}
+          >
+            {label.map((item, index) => (
+              <div key={index}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  style={{
+                    width: "100%",
+                    maxWidth: "290px",
+                    margin: "0 auto",
+                    borderRadius: "4px",
+                  }}
+                />
+                <p style={{ marginTop: "10px", fontSize: "13px" }}>
+                  {item.title}
+                </p>
+              </div>
+            ))}
+          </div>
+          <br></br>
+          {/* HAPPENING NOW */}
+          <h2
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+              textAlign: "center",
+            }}
+          >
+            HAPPENING NOW
+          </h2>
+          <br></br>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(256px, 1fr))",
+              gap: "30px",
+              textAlign: "center",
+            }}
+          >
+            {happening.map((item, index) => (
+              <div key={index}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  style={{
+                    width: "100%",
+                    maxWidth: "290px",
+                    margin: "0 auto",
+                    borderRadius: "4px",
+                  }}
+                />
+                <p style={{ marginTop: "10px", fontSize: "13px" }}>
+                  {item.title}
+                </p>
+              </div>
+            ))}
+          </div>
+          <br></br>
+          {/* trending */}
         </div>
       </div>
       <Recommand />
@@ -452,4 +335,4 @@ const WomenPage = () => {
   );
 };
 
-export default WomenPage;
+export default Women;
