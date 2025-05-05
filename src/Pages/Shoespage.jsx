@@ -8,9 +8,8 @@ import Navbar from "../Components/Navbar";
 import Recommand from "../Components/Recommand";
 import RecentlyViewedSlider from "../Components/Recentlyview";
 import Footer from "../Components/Footer";
-import "./Guestdesc.css";
 
-const Guestdesc = () => {
+const Shoespage = () => {
   const [data, setData] = useState([]);
   const [sortOrder, setSortOrder] = useState("Featured");
   const [showSidebar, setShowSidebar] = useState(false);
@@ -25,7 +24,7 @@ const Guestdesc = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let url = "http://localhost:3000/data";
+        let url = "http://localhost:3000/shoes";
         const response = await axios.get(url);
 
         const enriched = response.data.map((item) => {
@@ -165,33 +164,27 @@ const Guestdesc = () => {
           </div>
 
           <div className="filters">
-            {[
-              "All Filters",
-              "size",
-              "Price",
-              "Dress Skirt Length",
-              "Occasion",
-              "Color",
-              "Sleeve Length",
-            ].map((filter) => (
-              <button
-                key={filter}
-                className="filterBtn"
-                onClick={() => {
-                  setActiveFilter(filter);
-                  setShowSidebar(true);
-                }}
-              >
-                {filter}
-              </button>
-            ))}
+            {["All Filters", "size", "Price", "Occasion", "Color"].map(
+              (filter) => (
+                <button
+                  key={filter}
+                  className="filterBtn"
+                  onClick={() => {
+                    setActiveFilter(filter);
+                    setShowSidebar(true);
+                  }}
+                >
+                  {filter}
+                </button>
+              )
+            )}
           </div>
         </div>
 
         <div className="productGrid">
           {filteredData.map((item, idx) => (
             <div key={idx} className="productCard">
-              <Link to={`/beachdesc/${item.id}`}>
+              <Link to={`/shoes/${item.id}`}>
                 <img
                   src={item.image[0]}
                   alt={item.title}
@@ -229,14 +222,7 @@ const Guestdesc = () => {
             {activeFilter === "All Filters" ? (
               <div>
                 <h3>All Filters</h3>
-                {[
-                  "size",
-                  "Price",
-                  "Color",
-                  "Dress Skirt Length",
-                  "Occasion",
-                  "Sleeve Length",
-                ].map((filter) => (
+                {["size", "Price", "Color", "Occasion"].map((filter) => (
                   <button
                     key={filter}
                     onClick={() => setActiveFilter(filter)}
@@ -427,4 +413,4 @@ const Guestdesc = () => {
   );
 };
 
-export default Guestdesc;
+export default Shoespage;

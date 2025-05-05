@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Services/firebase";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [name, setname] = useState("");
@@ -127,6 +127,12 @@ const Signup = () => {
         >
           Sign Up
         </button>
+        <p>
+          Already have an account?{" "}
+          <Link to={"/login"} style={{ color: "white" }}>
+            Login
+          </Link>
+        </p>
       </form>
       <ToastContainer position="top-right" autoClose={3000} />
     </div>

@@ -20,6 +20,16 @@ import Shopcart from "../Pages/Shopcart";
 import Services from "../Pages/Services";
 import Guestdesc from "../descriptionpages/Guestdesc";
 import Beachdesc from "../descriptionpages/Beachdesc";
+import Offer from "../Pages/Offer";
+import Offerdesc from "../descriptionpages/Offerdesc";
+import Checkout from "../Pages/Checkout";
+import Mother from "../Pages/Mother";
+import Bridetobe from "../Pages/Bridetobe";
+import Bridaldesc from "../descriptionpages/Bridaldesc";
+import Bridal from "../Components/Bridal";
+import Likedesc from "../descriptionpages/Likedesc";
+import Shoespage from "../Pages/Shoespage";
+import Shoesdesc from "../descriptionpages/Shoesdesc";
 
 const Allroutes = () => {
   return (
@@ -44,6 +54,16 @@ const Allroutes = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/guestdesc" element={<Guestdesc />} />
         <Route path="/beachdesc/:id" element={<Beachdesc />} />
+        <Route path="/offer" element={<Offer />} />
+        <Route path="/offer/:id" element={<Offerdesc />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/mother" element={<Mother />} />
+        <Route path="/bridetobe" element={<Bridetobe />} />
+        <Route path="/bridal/:id" element={<Bridaldesc />} />
+        <Route path="/likes/:id" element={<Likedesc />} />
+        <Route path="Shoes" element={<Shoes />} />
+        <Route path="shoespage" element={<Shoespage />} />
+        <Route path="/shoes/:id" element={<Shoesdesc />} />
       </Routes>
     </div>
   );

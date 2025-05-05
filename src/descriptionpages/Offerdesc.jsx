@@ -10,7 +10,7 @@ import Footer from "../Components/Footer";
 import { useCart } from "../Context/CartContext";
 import { useAuth } from "../Context/AuthContext"; // Auth Context
 
-const Beachdesc = () => {
+const Offerdesc = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState("");
@@ -22,11 +22,11 @@ const Beachdesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/data/${id}`)
+    fetch(`http://localhost:3000/offer/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
-        setMainImage(data.image?.[0] || data.image);
+        setMainImage(data.images?.[0] || data.images);
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -91,7 +91,7 @@ const Beachdesc = () => {
                 msOverflowStyle: "none",
               }}
             >
-              {product.image?.map((img, i) => (
+              {product.images?.map((img, i) => (
                 <img
                   key={i}
                   src={img}
@@ -253,4 +253,4 @@ const Beachdesc = () => {
   );
 };
 
-export default Beachdesc;
+export default Offerdesc;

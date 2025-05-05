@@ -19,7 +19,7 @@ const Navbar = () => {
             position: absolute;
             width: 100%;
             height: 1.7px;
-            bottom: -6px;
+            bottom: -5.5px;
             left: 0;
             background-color: black;
             opacity: 0;

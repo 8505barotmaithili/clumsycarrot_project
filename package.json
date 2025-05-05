@@ -11,6 +11,7 @@
     "server": "json-server --watch db.json"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.7.0",
     "axios": "^1.9.0",
     "bootstrap": "^5.3.5",
     "css-loader": "^7.1.2",

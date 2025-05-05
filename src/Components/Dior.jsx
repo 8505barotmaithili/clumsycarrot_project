@@ -7,7 +7,7 @@ const Dior = () => {
       <div
         style={{
           display: "flex",
-          marginTop: "5%",
+          marginTop: "7%",
           width: "95%",
           margin: "auto",
         }}

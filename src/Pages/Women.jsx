@@ -176,22 +176,21 @@ const Women = () => {
                 key={index}
                 style={{
                   textAlign: "center",
-                  maxWidth: "358px",
+                  maxWidth: "308px",
                 }}
               >
                 <Link
                   to="/guestdesc"
-                  state={{
-                    apiUrl:
-                      index === 0
-                        ? "http://localhost:3000/data"
-                        : "http://localhost:3000/trending",
-                  }}
+                  state={{ apiUrl: item.apiUrl }} // Pass the apiUrl for the clicked item
                 >
                   <img
                     src={item.image}
                     alt={item.title}
-                    style={{ width: "100%", cursor: "pointer" }}
+                    style={{
+                      width: "100%",
+                      height: "440px",
+                      cursor: "pointer",
+                    }}
                   />
                 </Link>
                 <p

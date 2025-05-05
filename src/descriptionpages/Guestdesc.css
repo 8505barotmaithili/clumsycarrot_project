@@ -1,0 +1,141 @@
+/* Guestdesc.css */
+
+/* General container styles */
+.container {
+  padding: 30px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #222;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.count {
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+  margin-left: 8px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filterBtn {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sortContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.productCard {
+  text-align: center;
+}
+
+.productImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.brand {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.titleText {
+  font-size: 14px;
+  color: #333;
+  margin: 4px 0;
+}
+
+.price {
+  font-weight: 500;
+  color: #111;
+}
+
+.rating {
+  font-size: 13px;
+  color: #f5a623;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Sidebar styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.size-filter-btn {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+

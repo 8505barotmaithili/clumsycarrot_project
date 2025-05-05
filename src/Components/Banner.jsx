@@ -8,10 +8,12 @@ const Banner = () => {
         <div
           style={{ width: "32%", backgroundColor: "black", height: "710px" }}
         >
-          <img
-            src="\src\assets\banner_1.png"
-            style={{ height: "100%", width: "100%" }}
-          ></img>
+          <Link to={"/offer"}>
+            <img
+              src="\src\assets\banner_1.png"
+              style={{ height: "100%", width: "100%" }}
+            ></img>
+          </Link>
         </div>
         <div
           style={{
@@ -40,16 +42,21 @@ const Banner = () => {
           <br></br>
           Venice Beach in the '80s. <br></br>
           <br></br>
-          <Link href="">SHOP NOW</Link>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="">EXPLORE THE LOOK BOOK</Link>
+          <br></br>
+          <div style={{ display: "flex", gap: "20px", marginLeft: "25%" }}>
+            <Link to="/women">SHOP NOW</Link>
+            <Link to="/bridetobe">EXPLORE THE LOOK HERE</Link>
+          </div>
         </div>
+
         <div style={{ width: "33%", backgroundColor: "purple" }}>
           {" "}
-          <img
-            src="\src\assets\banner_2.png"
-            style={{ height: "100%", width: "100%" }}
-          ></img>
+          <Link to={"/offer"}>
+            <img
+              src="\src\assets\banner_2.png"
+              style={{ height: "100%", width: "100%" }}
+            ></img>
+          </Link>
         </div>
       </div>
     </div>

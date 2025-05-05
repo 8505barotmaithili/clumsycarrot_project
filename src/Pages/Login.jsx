@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../Services/firebase";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setemail] = useState("");
@@ -143,6 +143,12 @@ const Login = () => {
         >
           Sign In with Google
         </button>
+        <p>
+          please sign up first{" "}
+          <Link to={"/signup"} style={{ color: "white" }}>
+            Sign up
+          </Link>
+        </p>
       </form>
       <ToastContainer position="top-right" autoClose={3000} />
     </div>

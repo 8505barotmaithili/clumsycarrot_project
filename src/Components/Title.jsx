@@ -2,7 +2,10 @@ import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { RiShoppingBagFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { useCart } from "../Context/CartContext";
 const Title = () => {
+  const { cartItems } = useCart();
+
   return (
     <div>
       <div
@@ -46,13 +49,25 @@ const Title = () => {
           />
           <Link
             to={"/shopcart"}
-            style={{
-              color: "#DB9C60",
-              fontSize: "23px",
-            }}
+            style={{ color: "#DB9C60", fontSize: "23px", position: "relative" }}
           >
-            {" "}
             <RiShoppingBagFill />
+            {cartItems.length > 0 && (
+              <span
+                style={{
+                  position: "absolute",
+                  top: "-5px",
+                  right: "-10px",
+                  backgroundColor: "red",
+                  color: "white",
+                  borderRadius: "50%",
+                  padding: "2px 6px",
+                  fontSize: "12px",
+                }}
+              >
+                {cartItems.length}
+              </span>
+            )}
           </Link>
         </div>
       </div>

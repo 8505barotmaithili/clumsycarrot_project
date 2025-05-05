@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Headline from "../Components/Headline";
 import Small_nav from "../Components/Small_nav";
 import Title from "../Components/Title";
@@ -7,6 +7,8 @@ import Navbar from "../Components/Navbar";
 import Recommand from "../Components/Recommand";
 import RecentlyViewedSlider from "../Components/Recentlyview";
 import Footer from "../Components/Footer";
+import { useCart } from "../Context/CartContext";
+import { useAuth } from "../Context/AuthContext";
 
 const Recomdesc = () => {
   const { id } = useParams();
@@ -15,12 +17,16 @@ const Recomdesc = () => {
   const [selectedSize, setSelectedSize] = useState("");
   const [loading, setLoading] = useState(true);
 
+  const { addToCart } = useCart();
+  const { user } = useAuth();
+  const navigate = useNavigate();
+
   useEffect(() => {
     fetch(`http://localhost:3000/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
-        setMainImage(data.images?.[0] || data.images); // Fallback to main image if no gallery
+        setMainImage(data.images?.[0] || data.images);
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -31,7 +37,14 @@ const Recomdesc = () => {
   const sizes = ["XXS", "XS", "S", "M", "L", "XL"];
 
   const handleclick = () => {
-    alert("hello");
+    if (!user) {
+      alert("Please login to add items to your cart.");
+      navigate("/login");
+      return;
+    }
+
+    addToCart(product);
+    alert("Item added to cart!");
   };
 
   return (
@@ -40,6 +53,8 @@ const Recomdesc = () => {
       <Small_nav />
       <Title />
       <Navbar />
+      <hr></hr>
+
       <div
         style={{
           display: "flex",
@@ -50,7 +65,6 @@ const Recomdesc = () => {
       >
         {/* Left Section - Thumbnails + Main Image + 'Complete the Look' */}
         <div style={{ display: "flex" }}>
-          {/* Thumbnails */}
           <div
             style={{
               display: "flex",
@@ -69,8 +83,8 @@ const Recomdesc = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "10px",
-                scrollbarWidth: "none", // Firefox
-                msOverflowStyle: "none", // IE and Edge
+                scrollbarWidth: "none",
+                msOverflowStyle: "none",
               }}
             >
               {product.images?.map((img, i) => (
@@ -90,8 +104,6 @@ const Recomdesc = () => {
                 />
               ))}
             </div>
-
-            {/* Down Arrow to Scroll */}
             <div
               onClick={() => {
                 const container = document.getElementById("thumbnail-scroll");
@@ -107,13 +119,8 @@ const Recomdesc = () => {
             </div>
           </div>
 
-          {/* Main Image + Button */}
-          <div
-            style={{
-              position: "relative",
-              marginLeft: "30%",
-            }}
-          >
+          {/* Main Image */}
+          <div style={{ position: "relative", marginLeft: "30%" }}>
             <img
               src={mainImage}
               alt={product.name}
@@ -129,7 +136,6 @@ const Recomdesc = () => {
               }
               onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
             />
-
             <div
               style={{
                 position: "absolute",
@@ -155,6 +161,7 @@ const Recomdesc = () => {
             </div>
           </div>
         </div>
+
         {/* Right Section - Product Details */}
         <div style={{ width: "100%", marginLeft: "19%" }}>
           <h2 style={{ fontWeight: "bold" }}>{product.brand}</h2>
@@ -201,13 +208,12 @@ const Recomdesc = () => {
               cursor: "pointer",
               margin: "20px 0",
             }}
-            onClick={() => {
-              handleclick();
-            }}
+            onClick={handleclick}
           >
             ADD TO BAG
           </button>
-          {/* Others You May Like */}
+
+          {/* Product details */}
           <h2 style={{ marginTop: "40px" }}>Product details</h2>
           <div
             style={{
@@ -247,18 +253,11 @@ const Recomdesc = () => {
                 partnering with leading designers and skilled artisans to craft
                 exquisite fine jewelry befitting the Bloomingdale's name. The
                 result is a covetable collection that's meant to be worn, mixed,
-                layered, and made your own. Every item in the Bloomingdale's
-                Fine Collection is created by expert craftspeople who design and
-                finish each piece to Bloomingdale's exacting standards. From
-                breathtaking diamond jewelry with stones audited and inspected
-                by a certified gemologist to minimalist-yet-luxe styles in
-                polished gold, the Bloomingdale's Fine Collection encompasses a
-                world of beauty for every occasion.
+                layered, and made your own...
               </p>
             </div>
           </div>
         </div>
-        <div></div>
       </div>
       <Recommand />
       <RecentlyViewedSlider />
