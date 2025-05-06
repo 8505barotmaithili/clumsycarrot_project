@@ -1,0 +1,65 @@
+/* Base styles */
+.motherday-container {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.motherday-grid {
+  display: flex;
+  gap: 2.5%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.editorial-card {
+  height: 430px;
+  width: 23%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: #f3f3f3;
+}
+
+.editorial-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .editorial-card {
+    width: 45%;
+    height: 400px;
+  }
+
+  .editorial-card img {
+    height: 100%;
+    
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .editorial-card {
+    width: 90%;
+    height: 350px;
+  }
+
+  .motherday-grid {
+    gap: 20px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .editorial-card {
+    width: 100%;
+    height: 300px;
+  }
+}

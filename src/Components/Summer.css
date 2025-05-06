@@ -1,0 +1,69 @@
+.summer-container {
+    width: 96%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3%;
+  }
+  
+  .summer-heading {
+    margin-top: 7%;
+    font-size: 2rem;
+  }
+  
+  .summer-grid {
+    display: flex;
+    gap: 1.6%;
+    margin-top: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .summer-card {
+    height: 600px;
+    width: 48%;
+    position: relative;
+    background-color: #f5f5f5;
+  }
+  
+  .summer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .summer-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Tablet Devices */
+  @media (max-width: 1024px) {
+    .summer-card {
+      height: 500px;
+      width: 90%;
+    }
+  
+    .summer-heading {
+      font-size: 1.75rem;
+    }
+
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 768px) {
+    .summer-card {
+      height: 400px;
+      width: 100%;
+    padding: 50px;
+    }
+  
+    .summer-heading {
+      font-size: 1.5rem;
+    }
+  
+    .summer-card p {
+      font-size: 1rem;
+    }
+  }
+  

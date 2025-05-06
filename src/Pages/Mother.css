@@ -1,0 +1,65 @@
+.mother-container {
+    width: 100%;
+  }
+  
+  .mothers-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  
+  .mothers-main-banner {
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  
+  .mothers-main-banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .gift-card-banner {
+    background-color: #cae9f5;
+    text-align: center;
+    padding: 40px 10px;
+  }
+  
+  .gift-card-banner img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .treat-her-section {
+    text-align: center;
+    padding: 50px 5%;
+  }
+  
+  .treat-her-images {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .treat-her-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .gift-description {
+    text-align: justify;
+    max-width: 900px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  

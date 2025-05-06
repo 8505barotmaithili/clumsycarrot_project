@@ -1,0 +1,64 @@
+/* Base styles for Swiper buttons and text */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 12px;
+  }
+
+  .headline-slide-text {
+    font-size: 10px !important;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .headline-button {
+    font-size: 20px !important;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline-slide-text {
+    font-size: 9px !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Hide nav buttons on very small screens */
+  }
+
+  .headline-button {
+    font-size: 18px !important;
+  }
+}

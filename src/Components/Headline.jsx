@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { IoPause } from "react-icons/io5";
 import { BiSolidRightArrow } from "react-icons/bi";
+import "./Headline.css";
 
 const Headline = () => {
   const [icon, seticon] = useState(true);
@@ -21,36 +22,6 @@ const Headline = () => {
         textAlign: "center",
       }}
     >
-      {/* Custom Swiper Button Style */}
-      <style>
-        {`
-          .swiper-button-next,
-          .swiper-button-prev {
-            color: white;
-            width: 30px;
-            height: 30px;
-            font-size: 16px;
-            
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-          }
-        
-          .swiper-button-next::after,
-          .swiper-button-prev::after {
-            font-size: 16px;
-            font-weight: bold;
-            
-          }
-          .swiper {
-            width: 100%;
-            height: 100%;
-          }
-        `}
-      </style>
-      {/* Swiper inside Black Bar */}
       <div
         style={{
           height: "30px",

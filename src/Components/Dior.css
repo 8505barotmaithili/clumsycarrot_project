@@ -1,0 +1,69 @@
+/* Base styles for the Dior component */
+.dior-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    width: 95%;
+    margin: auto;
+  }
+  
+  .dior-image-container {
+    height: 700px;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .dior-image {
+    height: 100%;
+    width: 100%;
+  
+    display: block;
+  }
+  
+  /* Media Queries */
+  
+  /* For Tablets (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .dior-container {
+      margin-top: 5%;
+    }
+  
+    .dior-image-container {
+      height: 500px; /* Adjusting image container height for tablets */
+    }
+  
+    .dior-image {
+      object-fit: cover; /* Ensuring the image covers the space correctly */
+    }
+  }
+  
+  /* For Mobile Devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .dior-container {
+      margin-top: 3%;
+    }
+  
+    .dior-image-container {
+      height: 400px; /* Adjusting image container height for smaller screens */
+    }
+  
+    .dior-image {
+      object-fit: cover;
+    }
+  }
+  
+  /* For Very Small Mobile Devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .dior-container {
+      margin-top: 2%;
+    }
+  
+    .dior-image-container {
+      height: 300px; /* Further adjust image container for very small screens */
+    }
+  
+    .dior-image {
+      object-fit: cover;
+    }
+  }
+  

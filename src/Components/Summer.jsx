@@ -1,38 +1,71 @@
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// const Summer = () => {
+//   return (
+//     <div
+//       style={{
+//         marginTop: "10%",
+//         textAlign: "center",
+//         width: "96%",
+//         margin: "auto",
+//       }}
+//     >
+//       <h2 style={{ marginTop: "7%" }}>SUMMER EVENTS</h2>
+//       <div style={{ display: "flex", marginTop: "3%", gap: "1.6%" }}>
+//         <div
+//           style={{ height: "600px", width: "50%", backgroundColor: "black" }}
+//         >
+//           <Link to={"/guestdesc"}>
+//             <img
+//               src="https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0429-0501_Desktop_weddingguest:5x4?$subad_pool_2_desktop_5x4$&resMode=sharp2&qlt=85,0&fmt=webp"
+//               style={{ height: "100%", width: "100%" }}
+//             ></img>
+//           </Link>
+//           WEDDING GUEST DRESSES
+//         </div>
+//         <div style={{ height: "600px", width: "50%", backgroundColor: "pink" }}>
+//           <Link to={"/bridetobe"}>
+//             {" "}
+//             <img
+//               src="https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0429-0501_Desktop_bridetobe?$subad_pool_2_desktop_5x4$&resMode=sharp2&qlt=85,0&fmt=webp"
+//               style={{ height: "100%", width: "100%" }}
+//             ></img>
+//           </Link>
+//           BRIDE-TO-BE DRESSES
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Summer;
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Summer.css";
 
 const Summer = () => {
   return (
-    <div
-      style={{
-        marginTop: "10%",
-        textAlign: "center",
-        width: "96%",
-        margin: "auto",
-      }}
-    >
-      <h3 style={{ marginTop: "7%" }}>SUMMER EVENTS</h3>
-      <div style={{ display: "flex", marginTop: "3%", gap: "1.6%" }}>
-        <div
-          style={{ height: "600px", width: "50%", backgroundColor: "black" }}
-        >
-          <Link to={"/guestdesc"}>
+    <div className="summer-container">
+      <h2 className="summer-heading">SUMMER EVENTS</h2>
+      <div className="summer-grid">
+        <div className="summer-card">
+          <Link to="/guestdesc">
             <img
               src="https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0429-0501_Desktop_weddingguest:5x4?$subad_pool_2_desktop_5x4$&resMode=sharp2&qlt=85,0&fmt=webp"
-              style={{ height: "100%", width: "100%" }}
-            ></img>
+              alt="Wedding Guest Dresses"
+            />
           </Link>
-          WEDDING GUEST DRESSES
+          <p>WEDDING GUEST DRESSES</p>
         </div>
-        <div style={{ height: "600px", width: "50%", backgroundColor: "pink" }}>
-          <Link to={"/bridetobe"}>
-            {" "}
+        <div className="summer-card">
+          <Link to="/bridetobe">
             <img
               src="https://images.bloomingdalesassets.com/is/image/MacysInc/2025_HP_0429-0501_Desktop_bridetobe?$subad_pool_2_desktop_5x4$&resMode=sharp2&qlt=85,0&fmt=webp"
-              style={{ height: "100%", width: "100%" }}
-            ></img>
+              alt="Bride-to-be Dresses"
+            />
           </Link>
-          BRIDE-TO-BE DRESSES
+          <p>BRIDE-TO-BE DRESSES</p>
         </div>
       </div>
     </div>

@@ -24,16 +24,32 @@ const Home = () => {
       <Small_nav />
       <Title />
       <Navbar />
-      <hr></hr>
+      <br></br>
       {/* <Products /> */}
       <Banner />
       <Recommand />
+      <br></br>
+      <br></br>
+      <br></br>
       <Motherday />
+
       <Giftsection />
+      <br></br>
+      <br></br>
+
       <Summer />
+      <br></br>
+      <br></br>
+
       <Bridal />
+      <br></br>
+      <br></br>
+      <br></br>
       <Dior />
+      <br></br>
       <Likes />
+
+      <br></br>
       <Recentlyview />
       <Footer />
     </div>
