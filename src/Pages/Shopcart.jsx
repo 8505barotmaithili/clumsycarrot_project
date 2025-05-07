@@ -64,7 +64,7 @@ const Shopcart = () => {
                 }}
               >
                 <img
-                  src={item.images[0]}
+                  src={item.image[0]}
                   alt={item.name}
                   style={{
                     width: "6rem",

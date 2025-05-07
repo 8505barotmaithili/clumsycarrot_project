@@ -30,6 +30,8 @@ import Bridal from "../Components/Bridal";
 import Likedesc from "../descriptionpages/Likedesc";
 import Shoespage from "../Pages/Shoespage";
 import Shoesdesc from "../descriptionpages/Shoesdesc";
+import Payment from "../Pages/Payment";
+import Scanner from "../Pages/Scanner";
 
 const Allroutes = () => {
   return (
@@ -64,6 +66,8 @@ const Allroutes = () => {
         <Route path="Shoes" element={<Shoes />} />
         <Route path="shoespage" element={<Shoespage />} />
         <Route path="/shoes/:id" element={<Shoesdesc />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/scanner" element={<Scanner />} />
       </Routes>
     </div>
   );

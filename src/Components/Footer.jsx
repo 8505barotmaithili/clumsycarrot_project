@@ -198,6 +198,7 @@ import { FaMobileScreenButton } from "react-icons/fa6";
 import { FaInstagram, FaPinterestP, FaFacebook } from "react-icons/fa";
 import { SiX } from "react-icons/si";
 import "./Footer.css"; // Import the CSS
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -248,6 +249,7 @@ const Footer = () => {
             <li>
               <FaFacebook />
             </li>
+
             <li>
               <SiX />
             </li>
@@ -266,6 +268,10 @@ const Footer = () => {
           our corporate name and address.
         </p>
         <p>Like No Other Store in the World</p>
+        <Link to={"/scanner"} style={{ color: "black" }}>
+          {" "}
+          <h2> Join Our Whatsapp Group </h2>
+        </Link>
       </div>
     </div>
   );
