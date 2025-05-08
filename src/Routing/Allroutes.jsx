@@ -32,6 +32,7 @@ import Shoespage from "../Pages/Shoespage";
 import Shoesdesc from "../descriptionpages/Shoesdesc";
 import Payment from "../Pages/Payment";
 import Scanner from "../Pages/Scanner";
+import Thankyou from "../Pages/Thankyou";
 
 const Allroutes = () => {
   return (
@@ -68,6 +69,7 @@ const Allroutes = () => {
         <Route path="/shoes/:id" element={<Shoesdesc />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/scanner" element={<Scanner />} />
+        <Route path="/thankyou" element={<Thankyou />} />
       </Routes>
     </div>
   );

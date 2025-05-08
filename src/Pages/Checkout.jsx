@@ -1,42 +1,146 @@
-// // import React, { useState } from "react";
+// // import React from "react";
 // // import { useCart } from "../Context/CartContext";
 // // import Headline from "../Components/Headline";
 // // import Small_nav from "../Components/Small_nav";
 // // import Title from "../Components/Title";
 // // import Navbar from "../Components/Navbar";
 // // import { useNavigate } from "react-router-dom";
+// // import { PayPalButtons } from "@paypal/react-paypal-js";
+// // import { toast } from "react-toastify";
+// // import jsPDF from "jspdf";
+// // import "jspdf-autotable";
+// // import emailjs from "emailjs-com";
 
 // // const Checkout = () => {
-// //   const { cartItems, clearCart } = useCart(); // Assuming `clearCart` is a method in CartContext
-// //   const [billingInfo, setBillingInfo] = useState({
-// //     fullName: "",
-// //     email: "",
-// //     phone: "",
-// //     address: "",
-// //     city: "",
-// //     zip: "",
-// //     country: "",
-// //   });
-
+// //   const { cartItems, clearCart } = useCart();
 // //   const navigate = useNavigate();
 
-// //   // Calculate the total price of all items in the cart
 // //   const totalPrice = cartItems.reduce((total, item) => {
 // //     return (
 // //       total + item.quantity * parseFloat(item.price?.replace(/[^\d.]/g, ""))
 // //     );
 // //   }, 0);
 
-// //   const handleInputChange = (e) => {
-// //     const { name, value } = e.target;
-// //     setBillingInfo({ ...billingInfo, [name]: value });
+// //   const handlePaymentSuccess = async (details) => {
+// //     toast.success(`Transaction completed by ${details.payer.name.given_name}`);
+// //     console.log("PayPal Details:", details); // Log full response
+
+// //     const orderData = {
+// //       items: cartItems,
+// //     };
+
+// //     const paymentData = {
+// //       totalPrice: totalPrice.toFixed(2),
+// //       paymentStatus: "Completed",
+// //       transactionId: details.id,
+// //       date: new Date().toISOString(),
+// //     };
+
+// //     try {
+// //       const orderRes = await fetch("http://localhost:3000/orders", {
+// //         method: "POST",
+// //         headers: { "Content-Type": "application/json" },
+// //         body: JSON.stringify(orderData),
+// //       });
+
+// //       if (!orderRes.ok) throw new Error("Failed to save order.");
+
+// //       const paymentRes = await fetch("http://localhost:3000/payments", {
+// //         method: "POST",
+// //         headers: { "Content-Type": "application/json" },
+// //         body: JSON.stringify(paymentData),
+// //       });
+
+// //       if (!paymentRes.ok) throw new Error("Failed to save payment.");
+
+// //       clearCart();
+// //       toast.success("Order & Payment recorded successfully.");
+
+// //       // Log details.payer to check the full response structure
+// //       console.log("Payer Details:", details.payer); // Check if email is present
+
+// //       const emailParams = {
+// //         user_name: details.payer.name.given_name,
+// //         user_email: details.payer.email_address, // Ensure email is available
+// //         amount: totalPrice.toFixed(2),
+// //         transaction_id: details.id,
+// //         date: new Date().toLocaleDateString(),
+// //       };
+
+// //       console.log("Sending email to:", emailParams.user_email); // Check email before sending
+
+// //       // Fallback if email is missing
+// //       if (!emailParams.user_email) {
+// //         emailParams.user_email = "fallback-email@example.com"; // Fallback email
+// //         console.warn("User email is missing. Using fallback email.");
+// //       }
+
+// //       // Send email only if user_email exists
+// //       if (emailParams.user_email) {
+// //         emailjs
+// //           .send(
+// //             "service_gviwnz8", // Your service ID
+// //             "template_mtsoasi", // Your template ID
+// //             emailParams, // Parameters for the template
+// //             "fn_0x05l8LTqKIoXX" // Your user ID
+// //           )
+// //           .then(
+// //             (response) => {
+// //               console.log("Email sent successfully:", response);
+// //               toast.success("Payment confirmation email sent!");
+// //             },
+// //             (error) => {
+// //               console.error("Failed to send email:", error);
+// //               toast.error("Failed to send confirmation email.");
+// //               console.error("Error details:", error.text);
+// //             }
+// //           );
+// //       } else {
+// //         console.error("Email address is missing in the payment details.");
+// //         toast.error("Failed to send email. Missing recipient email address.");
+// //       }
+
+// //       navigate("/thankyou");
+// //     } catch (error) {
+// //       console.error("Checkout error:", error);
+// //       toast.error("Failed to save order or payment.");
+// //     }
 // //   };
 
-// //   const handleSubmit = (e) => {
-// //     e.preventDefault();
-// //     alert("Order submitted!");
-// //     clearCart(); // Clear the cart after submitting the order
-// //     navigate("/"); // Navigate to home page
+// //   const generateBill = () => {
+// //     const doc = new jsPDF();
+
+// //     // Header
+// //     doc.setFontSize(20);
+// //     doc.text("Clumsy Carrot Pvt. Ltd.", 14, 20);
+// //     doc.setFontSize(12);
+// //     doc.text(`Invoice #: INV-${Date.now()}`, 14, 30);
+// //     doc.text(`Date: ${new Date().toLocaleDateString()}`, 14, 36);
+
+// //     // Table
+// //     doc.autoTable({
+// //       startY: 45,
+// //       head: [["#", "Product", "Quantity", "Price", "Total"]],
+// //       body: cartItems.map((item, index) => {
+// //         const price = parseFloat(item.price?.replace(/[^\d.]/g, ""));
+// //         return [
+// //           index + 1,
+// //           item.brand,
+// //           item.quantity,
+// //           `₹${price.toFixed(2)}`,
+// //           `₹${(item.quantity * price).toFixed(2)}`,
+// //         ];
+// //       }),
+// //       styles: { fontSize: 11, halign: "center" },
+// //       headStyles: { fillColor: [34, 139, 230], textColor: 255 },
+// //     });
+
+// //     // Footer
+// //     const finalY = doc.lastAutoTable.finalY || 60;
+// //     doc.text(`Grand Total: ₹${totalPrice.toFixed(2)}`, 150, finalY + 10);
+// //     doc.text("Thank you for shopping with us!", 14, finalY + 30);
+
+// //     doc.save("Invoice.pdf");
 // //   };
 
 // //   return (
@@ -45,172 +149,126 @@
 // //       <Small_nav />
 // //       <Title />
 // //       <Navbar />
-// //       <div
-// //         style={{
-// //           padding: "2rem",
-// //           maxWidth: "1120px",
-// //           margin: "auto",
-// //           fontFamily: "sans-serif",
-// //           fontSize: "0.875rem",
-// //           color: "#1a1a1a",
-// //         }}
-// //       >
+
+// //       <div style={{ padding: "2rem", maxWidth: "1120px", margin: "auto" }}>
 // //         <h1
 // //           style={{
 // //             fontSize: "1.75rem",
 // //             fontWeight: "700",
 // //             marginBottom: "2rem",
-// //             color: "#111",
 // //           }}
 // //         >
 // //           Checkout
 // //         </h1>
 
-// //         <form onSubmit={handleSubmit}>
-// //           {/* Billing Information Section */}
-// //           <div
-// //             style={{
-// //               background: "#fff",
-// //               borderRadius: "0.5rem",
-// //               boxShadow: "0 2px 10px rgba(0, 0, 0, 0.05)",
-// //               padding: "2rem",
-// //               marginBottom: "2rem",
-// //             }}
-// //           >
-// //             <h2
-// //               style={{ fontSize: "1.5rem", fontWeight: "600", color: "#333" }}
-// //             >
-// //               Billing Information
-// //             </h2>
-// //             <div style={{ marginBottom: "1rem" }}>
-// //               <label style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
-// //                 Full Name:
-// //               </label>
-// //               <input
-// //                 type="text"
-// //                 name="fullName"
-// //                 value={billingInfo.fullName}
-// //                 onChange={handleInputChange}
-// //                 required
-// //                 style={{
-// //                   width: "100%",
-// //                   padding: "1rem",
-// //                   border: "1px solid #e0e0e0",
-// //                   borderRadius: "0.375rem",
-// //                   marginBottom: "1rem",
-// //                   fontSize: "1rem",
-// //                   color: "#333",
-// //                 }}
-// //               />
-// //             </div>
-
-// //             {["email", "phone", "address", "city", "zip", "country"].map(
-// //               (field, idx) => (
-// //                 <div key={idx} style={{ marginBottom: "1rem" }}>
-// //                   <label
-// //                     style={{
-// //                       fontWeight: "600",
-// //                       marginBottom: "0.5rem",
-// //                     }}
-// //                   >
-// //                     {field.charAt(0).toUpperCase() + field.slice(1)}:
-// //                   </label>
-// //                   <input
-// //                     type="text"
-// //                     name={field}
-// //                     value={billingInfo[field]}
-// //                     onChange={handleInputChange}
-// //                     required
-// //                     style={{
-// //                       width: "100%",
-// //                       padding: "1rem",
-// //                       border: "1px solid #e0e0e0",
-// //                       borderRadius: "0.375rem",
-// //                       fontSize: "1rem",
-// //                       color: "#333",
-// //                     }}
-// //                   />
-// //                 </div>
-// //               )
-// //             )}
-// //           </div>
-
-// //           {/* Order Summary Section */}
-// //           <div
-// //             style={{
-// //               background: "#fff",
-// //               borderRadius: "0.5rem",
-// //               boxShadow: "0 2px 10px rgba(0, 0, 0, 0.05)",
-// //               padding: "2rem",
-// //               marginBottom: "2rem",
-// //             }}
-// //           >
-// //             <h2
-// //               style={{ fontSize: "1.5rem", fontWeight: "600", color: "#333" }}
-// //             >
-// //               Order Summary
-// //             </h2>
-// //             {cartItems.map((item, index) => (
-// //               <div
-// //                 key={index}
-// //                 style={{
-// //                   display: "flex",
-// //                   justifyContent: "space-between",
-// //                   padding: "1rem 0",
-// //                   borderBottom: "1px solid #f0f0f0",
-// //                 }}
-// //               >
-// //                 <div>
-// //                   <p style={{ fontWeight: "600", fontSize: "1rem" }}>
-// //                     {item.name}
-// //                   </p>
-// //                   <p>Quantity: {item.quantity}</p>
-// //                 </div>
-// //                 <div>
-// //                   <p>
-// //                     INR{" "}
-// //                     {(
-// //                       item.quantity *
-// //                       parseFloat(item.price?.replace(/[^\d.]/g, ""))
-// //                     ).toLocaleString()}
-// //                   </p>
-// //                 </div>
-// //               </div>
-// //             ))}
+// //         {/* Order Summary */}
+// //         <div
+// //           style={{
+// //             background: "#fff",
+// //             padding: "2rem",
+// //             marginBottom: "2rem",
+// //             borderRadius: "0.5rem",
+// //           }}
+// //         >
+// //           <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
+// //             Order Summary
+// //           </h2>
+// //           {cartItems.map((item, idx) => (
 // //             <div
+// //               key={idx}
 // //               style={{
 // //                 display: "flex",
 // //                 justifyContent: "space-between",
 // //                 padding: "1rem 0",
-// //                 fontWeight: "600",
 // //               }}
 // //             >
-// //               <p>Total:</p>
-// //               <p>INR {totalPrice.toLocaleString()}</p>
+// //               <div style={{ display: "flex", gap: "1rem" }}>
+// //                 <img
+// //                   src={item.image} // assuming `item.imageUrl` contains the image URL
+// //                   alt={item.brand}
+// //                   style={{ width: "50px", height: "50px", objectFit: "cover" }}
+// //                 />
+// //                 <div>
+// //                   <p style={{ fontWeight: "600" }}>
+// //                     Product Name: {item.brand}
+// //                   </p>
+// //                   <p>Quantity: {item.quantity}</p>
+// //                 </div>
+// //               </div>
+// //               <p>
+// //                 ₹
+// //                 {(
+// //                   item.quantity * parseFloat(item.price?.replace(/[^\d.]/g, ""))
+// //                 ).toLocaleString()}
+// //               </p>
 // //             </div>
-// //           </div>
+// //           ))}
 
-// //           {/* Proceed to Payment Button */}
-// //           <div style={{ textAlign: "center" }}>
-// //             <button
-// //               type="submit"
-// //               style={{
-// //                 padding: "1rem 2rem",
-// //                 backgroundColor: "#2563eb",
-// //                 color: "#fff",
-// //                 border: "none",
-// //                 borderRadius: "0.375rem",
-// //                 cursor: "pointer",
-// //                 fontSize: "1rem",
-// //                 transition: "background-color 0.3s",
-// //               }}
-// //               onMouseEnter={(e) => (e.target.style.backgroundColor = "#1d4ed8")}
-// //               onMouseLeave={(e) => (e.target.style.backgroundColor = "#2563eb")}
-// //             >
-// //               Proceed to Payment
-// //             </button>
+// //           <div
+// //             style={{
+// //               display: "flex",
+// //               justifyContent: "space-between",
+// //               fontWeight: "600",
+// //               marginTop: "1rem",
+// //             }}
+// //           >
+// //             <p>Total:</p>
+// //             <p>₹{totalPrice.toLocaleString()}</p>
 // //           </div>
-// //         </form>
+// //         </div>
+
+// //         {/* Buttons */}
+// //         <div
+// //           style={{
+// //             display: "flex",
+// //             justifyContent: "center",
+// //             gap: "1rem",
+// //             marginTop: "2rem",
+// //             flexWrap: "wrap",
+// //           }}
+// //         >
+// //           <button
+// //             onClick={generateBill}
+// //             style={{
+// //               padding: "0.75rem 1.5rem",
+// //               backgroundColor: "#2563eb",
+// //               color: "#fff",
+// //               border: "none",
+// //               borderRadius: "5px",
+// //               cursor: "pointer",
+// //               fontSize: "1rem",
+// //             }}
+// //           >
+// //             Generate Bill
+// //           </button>
+
+// //           <div style={{ minWidth: "300px" }}>
+// //             <PayPalButtons
+// //               style={{ layout: "horizontal" }}
+// //               createOrder={(data, actions) => {
+// //                 return actions.order.create({
+// //                   purchase_units: [
+// //                     {
+// //                       amount: {
+// //                         value: totalPrice.toFixed(2),
+// //                         currency_code: "USD",
+// //                       },
+// //                     },
+// //                   ],
+// //                 });
+// //               }}
+// //               onApprove={(data, actions) => {
+// //                 return actions.order.capture().then((details) => {
+// //                   handlePaymentSuccess(details);
+// //                 });
+// //               }}
+// //               onError={(err) => {
+// //                 console.error("PayPal Checkout onError", err);
+// //                 toast.error("Payment failed. Please try again.");
+// //               }}
+// //             />
+// //           </div>
+// //         </div>
 // //       </div>
 // //     </div>
 // //   );
@@ -226,209 +284,15 @@
 // import Navbar from "../Components/Navbar";
 // import { useNavigate } from "react-router-dom";
 // import { PayPalButtons } from "@paypal/react-paypal-js";
-
-// const Checkout = () => {
-//   const { cartItems, clearCart } = useCart();
-//   const [billingInfo, setBillingInfo] = useState({
-//     fullName: "",
-//     email: "",
-//     phone: "",
-//     address: "",
-//     city: "",
-//     zip: "",
-//     country: "",
-//   });
-
-//   const navigate = useNavigate();
-
-//   const totalPrice = cartItems.reduce((total, item) => {
-//     return (
-//       total + item.quantity * parseFloat(item.price?.replace(/[^\d.]/g, ""))
-//     );
-//   }, 0);
-
-//   const handleInputChange = (e) => {
-//     const { name, value } = e.target;
-//     setBillingInfo({ ...billingInfo, [name]: value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     alert("Please complete payment using PayPal.");
-//   };
-
-//   const handlePaymentSuccess = (details) => {
-//     alert(`Transaction completed by ${details.payer.name.given_name}`);
-//     clearCart();
-//     navigate("/");
-//   };
-
-//   return (
-//     <div style={{ backgroundColor: "#f9fafb", paddingBottom: "4rem" }}>
-//       <Headline />
-//       <Small_nav />
-//       <Title />
-//       <Navbar />
-//       <div style={{ padding: "2rem", maxWidth: "1120px", margin: "auto" }}>
-//         <h1
-//           style={{
-//             fontSize: "1.75rem",
-//             fontWeight: "700",
-//             marginBottom: "2rem",
-//           }}
-//         >
-//           Checkout
-//         </h1>
-
-//         <form onSubmit={handleSubmit}>
-//           {/* Billing Info */}
-//           <div
-//             style={{
-//               background: "#fff",
-//               padding: "2rem",
-//               marginBottom: "2rem",
-//               borderRadius: "0.5rem",
-//             }}
-//           >
-//             <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-//               Billing Information
-//             </h2>
-//             {[
-//               "fullName",
-//               "email",
-//               "phone",
-//               "address",
-//               "city",
-//               "zip",
-//               "country",
-//             ].map((field, idx) => (
-//               <div key={idx} style={{ marginBottom: "1rem" }}>
-//                 <label style={{ fontWeight: "600" }}>
-//                   {field.charAt(0).toUpperCase() + field.slice(1)}:
-//                 </label>
-//                 <input
-//                   type="text"
-//                   name={field}
-//                   value={billingInfo[field]}
-//                   onChange={handleInputChange}
-//                   required
-//                   style={{
-//                     width: "100%",
-//                     padding: "1rem",
-//                     border: "1px solid #e0e0e0",
-//                     borderRadius: "0.375rem",
-//                     fontSize: "1rem",
-//                   }}
-//                 />
-//               </div>
-//             ))}
-//           </div>
-
-//           {/* Order Summary */}
-//           <div
-//             style={{
-//               background: "#fff",
-//               padding: "2rem",
-//               marginBottom: "2rem",
-//               borderRadius: "0.5rem",
-//             }}
-//           >
-//             <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-//               Order Summary
-//             </h2>
-//             {cartItems.map((item, idx) => (
-//               <div
-//                 key={idx}
-//                 style={{
-//                   display: "flex",
-//                   justifyContent: "space-between",
-//                   padding: "1rem 0",
-//                 }}
-//               >
-//                 <div>
-//                   <p style={{ fontWeight: "600" }}>{item.name}</p>
-//                   <p>Quantity: {item.quantity}</p>
-//                 </div>
-//                 <p>
-//                   ₹
-//                   {(
-//                     item.quantity *
-//                     parseFloat(item.price?.replace(/[^\d.]/g, ""))
-//                   ).toLocaleString()}
-//                 </p>
-//               </div>
-//             ))}
-//             <div
-//               style={{
-//                 display: "flex",
-//                 justifyContent: "space-between",
-//                 fontWeight: "600",
-//                 marginTop: "1rem",
-//               }}
-//             >
-//               <p>Total:</p>
-//               <p>₹{totalPrice.toLocaleString()}</p>
-//             </div>
-//           </div>
-
-//           {/* PayPal Button */}
-//           <div style={{ textAlign: "center", marginTop: "2rem" }}>
-//             <PayPalButtons
-//               style={{ layout: "horizontal" }}
-//               createOrder={(data, actions) => {
-//                 return actions.order.create({
-//                   purchase_units: [
-//                     {
-//                       amount: {
-//                         value: totalPrice.toFixed(2), // Convert to USD if needed
-//                         currency_code: "USD",
-//                       },
-//                     },
-//                   ],
-//                 });
-//               }}
-//               onApprove={(data, actions) => {
-//                 return actions.order.capture().then((details) => {
-//                   handlePaymentSuccess(details);
-//                 });
-//               }}
-//               onError={(err) => {
-//                 console.error("PayPal Checkout onError", err);
-//                 alert("Payment failed. Try again.");
-//               }}
-//             />
-//           </div>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Checkout;
-
-// import React, { useState } from "react";
-// import { useCart } from "../Context/CartContext";
-// import Headline from "../Components/Headline";
-// import Small_nav from "../Components/Small_nav";
-// import Title from "../Components/Title";
-// import Navbar from "../Components/Navbar";
-// import { useNavigate } from "react-router-dom";
-// import { PayPalButtons } from "@paypal/react-paypal-js";
 // import { toast } from "react-toastify";
+// import jsPDF from "jspdf";
+// import "jspdf-autotable";
+// import emailjs from "emailjs-com";
 
 // const Checkout = () => {
 //   const { cartItems, clearCart } = useCart();
-//   const [billingInfo, setBillingInfo] = useState({
-//     fullName: "",
-//     email: "",
-//     phone: "",
-//     address: "",
-//     city: "",
-//     zip: "",
-//     country: "",
-//   });
-
 //   const navigate = useNavigate();
+//   const [userEmail, setUserEmail] = useState("");
 
 //   const totalPrice = cartItems.reduce((total, item) => {
 //     return (
@@ -436,49 +300,114 @@
 //     );
 //   }, 0);
 
-//   const handleInputChange = (e) => {
-//     const { name, value } = e.target;
-//     setBillingInfo({ ...billingInfo, [name]: value });
-//   };
+//   const handlePaymentSuccess = async (details) => {
+//     toast.success(`Transaction completed by ${details.payer.name.given_name}`);
+//     console.log("PayPal Details:", details);
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     alert("Please complete payment using PayPal.");
-//   };
-
-//   const handlePaymentSuccess = (details) => {
-//     alert(`Transaction completed by ${details.payer.name.given_name}`);
-
-//     // Prepare order data
 //     const orderData = {
-//       fullName: billingInfo.fullName,
-//       email: billingInfo.email,
-//       phone: billingInfo.phone,
-//       address: billingInfo.address,
-//       city: billingInfo.city,
-//       zip: billingInfo.zip,
-//       country: billingInfo.country,
 //       items: cartItems,
+//       email: userEmail,
+//     };
+
+//     const paymentData = {
 //       totalPrice: totalPrice.toFixed(2),
 //       paymentStatus: "Completed",
 //       transactionId: details.id,
-//       date: new Date(),
+//       date: new Date().toISOString(),
 //     };
 
-//     // Save the order to JSON Server
-//     fetch("  http://localhost:3000/orders", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(orderData),
-//     })
-//       .then((response) => response.json())
-//       .then(() => {
-//         clearCart(); // Clear the cart after submitting the order
-//         toast.success("payment successfull");
-//       })
-//       .catch((error) => console.error("Error saving order:", error));
+//     try {
+//       const orderRes = await fetch("http://localhost:3000/orders", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify(orderData),
+//       });
+
+//       if (!orderRes.ok) throw new Error("Failed to save order.");
+
+//       const paymentRes = await fetch("http://localhost:3000/payments", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify(paymentData),
+//       });
+
+//       if (!paymentRes.ok) throw new Error("Failed to save payment.");
+
+//       clearCart();
+//       toast.success("Order & Payment recorded successfully.");
+
+//       const emailParams = {
+//         user_name: details.payer.name.given_name,
+//         user_email:
+//           userEmail ||
+//           details.payer.email_address ||
+//           "fallback-email@example.com",
+//         amount: totalPrice.toFixed(2),
+//         transaction_id: details.id,
+//         date: new Date().toLocaleDateString(),
+//       };
+
+//       if (
+//         !emailParams.user_email ||
+//         emailParams.user_email === "fallback-email@example.com"
+//       ) {
+//         toast.warn("User email is missing, using fallback.");
+//       }
+
+//       emailjs
+//         .send(
+//           "service_gviwnz8",
+//           "template_mtsoasi",
+//           emailParams,
+//           "fn_0x05l8LTqKIoXX"
+//         )
+//         .then(
+//           (response) => {
+//             console.log("Email sent successfully:", response);
+//             toast.success("Payment confirmation email sent!");
+//           },
+//           (error) => {
+//             console.error("Failed to send email:", error);
+//             toast.error("Failed to send confirmation email.");
+//           }
+//         );
+
+//       navigate("/thankyou");
+//     } catch (error) {
+//       console.error("Checkout error:", error);
+//       toast.error("Failed to save order or payment.");
+//     }
+//   };
+
+//   const generateBill = () => {
+//     const doc = new jsPDF();
+//     doc.setFontSize(20);
+//     doc.text("Clumsy Carrot Pvt. Ltd.", 14, 20);
+//     doc.setFontSize(12);
+//     doc.text(`Invoice #: INV-${Date.now()}`, 14, 30);
+//     doc.text(`Date: ${new Date().toLocaleDateString()}`, 14, 36);
+
+//     doc.autoTable({
+//       startY: 45,
+//       head: [["#", "Product", "Quantity", "Price", "Total"]],
+//       body: cartItems.map((item, index) => {
+//         const price = parseFloat(item.price?.replace(/[^\d.]/g, ""));
+//         return [
+//           index + 1,
+//           item.brand,
+//           item.quantity,
+//           `₹${price.toFixed(2)}`,
+//           `₹${(item.quantity * price).toFixed(2)}`,
+//         ];
+//       }),
+//       styles: { fontSize: 11, halign: "center" },
+//       headStyles: { fillColor: [34, 139, 230], textColor: 255 },
+//     });
+
+//     const finalY = doc.lastAutoTable.finalY || 60;
+//     doc.text(`Grand Total: ₹${totalPrice.toFixed(2)}`, 150, finalY + 10);
+//     doc.text("Thank you for shopping with us!", 14, finalY + 30);
+//     doc.save("Invoice.pdf");
 //   };
 
 //   return (
@@ -487,6 +416,7 @@
 //       <Small_nav />
 //       <Title />
 //       <Navbar />
+
 //       <div style={{ padding: "2rem", maxWidth: "1120px", margin: "auto" }}>
 //         <h1
 //           style={{
@@ -498,99 +428,110 @@
 //           Checkout
 //         </h1>
 
-//         <form onSubmit={handleSubmit}>
-//           {/* Billing Info */}
-//           <div
+//         {/* Email Input */}
+//         <div style={{ marginBottom: "1rem" }}>
+//           <label htmlFor="email" style={{ fontWeight: "600" }}>
+//             Your Email (for confirmation):
+//           </label>
+//           <input
+//             type="email"
+//             id="email"
+//             value={userEmail}
+//             onChange={(e) => setUserEmail(e.target.value)}
+//             placeholder="Enter your email"
+//             required
 //             style={{
-//               background: "#fff",
-//               padding: "2rem",
-//               marginBottom: "2rem",
-//               borderRadius: "0.5rem",
+//               padding: "0.5rem",
+//               width: "100%",
+//               marginTop: "0.5rem",
+//               borderRadius: "5px",
+//               border: "1px solid #ccc",
 //             }}
-//           >
-//             <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-//               Billing Information
-//             </h2>
-//             {[
-//               "fullName",
-//               "email",
-//               "phone",
-//               "address",
-//               "city",
-//               "zip",
-//               "country",
-//             ].map((field, idx) => (
-//               <div key={idx} style={{ marginBottom: "1rem" }}>
-//                 <label style={{ fontWeight: "600" }}>
-//                   {field.charAt(0).toUpperCase() + field.slice(1)}:
-//                 </label>
-//                 <input
-//                   type="text"
-//                   name={field}
-//                   value={billingInfo[field]}
-//                   onChange={handleInputChange}
-//                   required
-//                   style={{
-//                     width: "100%",
-//                     padding: "1rem",
-//                     border: "1px solid #e0e0e0",
-//                     borderRadius: "0.375rem",
-//                     fontSize: "1rem",
-//                   }}
-//                 />
-//               </div>
-//             ))}
-//           </div>
+//           />
+//         </div>
 
-//           {/* Order Summary */}
-//           <div
-//             style={{
-//               background: "#fff",
-//               padding: "2rem",
-//               marginBottom: "2rem",
-//               borderRadius: "0.5rem",
-//             }}
-//           >
-//             <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-//               Order Summary
-//             </h2>
-//             {cartItems.map((item, idx) => (
-//               <div
-//                 key={idx}
-//                 style={{
-//                   display: "flex",
-//                   justifyContent: "space-between",
-//                   padding: "1rem 0",
-//                 }}
-//               >
-//                 <div>
-//                   <p style={{ fontWeight: "600" }}>{item.name}</p>
-//                   <p>Quantity: {item.quantity}</p>
-//                 </div>
-//                 <p>
-//                   ₹
-//                   {(
-//                     item.quantity *
-//                     parseFloat(item.price?.replace(/[^\d.]/g, ""))
-//                   ).toLocaleString()}
-//                 </p>
-//               </div>
-//             ))}
+//         {/* Order Summary */}
+//         <div
+//           style={{
+//             background: "#fff",
+//             padding: "2rem",
+//             marginBottom: "2rem",
+//             borderRadius: "0.5rem",
+//           }}
+//         >
+//           <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
+//             Order Summary
+//           </h2>
+//           {cartItems.map((item, idx) => (
 //             <div
+//               key={idx}
 //               style={{
 //                 display: "flex",
 //                 justifyContent: "space-between",
-//                 fontWeight: "600",
-//                 marginTop: "1rem",
+//                 padding: "1rem 0",
 //               }}
 //             >
-//               <p>Total:</p>
-//               <p>₹{totalPrice.toLocaleString()}</p>
+//               <div style={{ display: "flex", gap: "1rem" }}>
+//                 <img
+//                   src={item.image}
+//                   alt={item.brand}
+//                   style={{ width: "50px", height: "50px", objectFit: "cover" }}
+//                 />
+//                 <div>
+//                   <p style={{ fontWeight: "600" }}>
+//                     Product Name: {item.brand}
+//                   </p>
+//                   <p>Quantity: {item.quantity}</p>
+//                 </div>
+//               </div>
+//               <p>
+//                 ₹
+//                 {(
+//                   item.quantity * parseFloat(item.price?.replace(/[^\d.]/g, ""))
+//                 ).toLocaleString()}
+//               </p>
 //             </div>
-//           </div>
+//           ))}
 
-//           {/* PayPal Button */}
-//           <div style={{ textAlign: "center", marginTop: "2rem" }}>
+//           <div
+//             style={{
+//               display: "flex",
+//               justifyContent: "space-between",
+//               fontWeight: "600",
+//               marginTop: "1rem",
+//             }}
+//           >
+//             <p>Total:</p>
+//             <p>₹{totalPrice.toLocaleString()}</p>
+//           </div>
+//         </div>
+
+//         {/* Buttons */}
+//         <div
+//           style={{
+//             display: "flex",
+//             justifyContent: "center",
+//             gap: "1rem",
+//             marginTop: "2rem",
+//             flexWrap: "wrap",
+//           }}
+//         >
+//           <button
+//             onClick={generateBill}
+//             style={{
+//               padding: "0.75rem 1.5rem",
+//               backgroundColor: "#2563eb",
+//               color: "#fff",
+//               border: "none",
+//               borderRadius: "5px",
+//               cursor: "pointer",
+//               fontSize: "1rem",
+//             }}
+//           >
+//             Generate Bill
+//           </button>
+
+//           <div style={{ minWidth: "300px" }}>
 //             <PayPalButtons
 //               style={{ layout: "horizontal" }}
 //               createOrder={(data, actions) => {
@@ -598,7 +539,7 @@
 //                   purchase_units: [
 //                     {
 //                       amount: {
-//                         value: totalPrice.toFixed(2), // Convert to USD if needed
+//                         value: totalPrice.toFixed(2),
 //                         currency_code: "USD",
 //                       },
 //                     },
@@ -612,11 +553,11 @@
 //               }}
 //               onError={(err) => {
 //                 console.error("PayPal Checkout onError", err);
-//                 alert("Payment failed. Try again.");
+//                 toast.error("Payment failed. Please try again.");
 //               }}
 //             />
 //           </div>
-//         </form>
+//         </div>
 //       </div>
 //     </div>
 //   );
@@ -632,20 +573,15 @@ import Navbar from "../Components/Navbar";
 import { useNavigate } from "react-router-dom";
 import { PayPalButtons } from "@paypal/react-paypal-js";
 import { toast } from "react-toastify";
+import jsPDF from "jspdf";
+import "jspdf-autotable";
+import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Checkout = () => {
   const { cartItems, clearCart } = useCart();
-  const [billingInfo, setBillingInfo] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    address: "",
-    city: "",
-    zip: "",
-    country: "",
-  });
-
   const navigate = useNavigate();
+  const [userEmail, setUserEmail] = useState("");
 
   const totalPrice = cartItems.reduce((total, item) => {
     return (
@@ -653,78 +589,127 @@ const Checkout = () => {
     );
   }, 0);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setBillingInfo({ ...billingInfo, [name]: value });
-  };
+  const handlePaymentSuccess = async (details) => {
+    toast.success(`Transaction completed by ${details.payer.name.given_name}`);
+    console.log("PayPal Details:", details);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Please complete payment using PayPal.");
-  };
-
-  const handlePaymentSuccess = (details) => {
-    alert(`Transaction completed by ${details.payer.name.given_name}`);
-
-    // Prepare order data
     const orderData = {
-      fullName: billingInfo.fullName,
-      email: billingInfo.email,
-      phone: billingInfo.phone,
-      address: billingInfo.address,
-      city: billingInfo.city,
-      zip: billingInfo.zip,
-      country: billingInfo.country,
       items: cartItems,
+      email: userEmail,
+    };
+
+    const paymentData = {
       totalPrice: totalPrice.toFixed(2),
       paymentStatus: "Completed",
       transactionId: details.id,
-      date: new Date(),
+      date: new Date().toISOString(),
     };
 
-    // Save the order to JSON Server
-    fetch("http://localhost:3000/orders", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(orderData),
-    })
-      .then((response) => response.json())
-      .then(() => {
-        // Prepare payment data
-        const paymentData = {
-          totalPrice: totalPrice.toFixed(2),
-          paymentStatus: "Completed",
-          transactionId: details.id,
-          date: new Date(),
-        };
+    try {
+      const orderRes = await fetch("http://localhost:3000/orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(orderData),
+      });
 
-        // Save the payment data to JSON Server
-        fetch("http://localhost:3000/payments", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+      if (!orderRes.ok) throw new Error("Failed to save order.");
+
+      const paymentRes = await fetch("http://localhost:3000/payments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(paymentData),
+      });
+
+      if (!paymentRes.ok) throw new Error("Failed to save payment.");
+
+      clearCart();
+      toast.success("Order & Payment recorded successfully.");
+      const emailParams = {
+        name: details.payer.name.given_name,
+        email:
+          userEmail ||
+          details.payer.email_address ||
+          "fallback-email@example.com",
+        amount: totalPrice.toFixed(2),
+        card: "PayPal", // optional
+        date: new Date().toLocaleDateString(),
+      };
+
+      if (
+        !emailParams.user_email ||
+        emailParams.user_email === "fallback-email@example.com"
+      ) {
+        toast.warn("User email is missing, using fallback.");
+      }
+
+      emailjs
+        .send(
+          "service_gviwnz8",
+          "template_mtsoasi",
+          emailParams,
+          "fn_0x05l8LTqKIoXX"
+        )
+        .then(
+          (response) => {
+            console.log("Email sent successfully:", response);
+            toast.success("Payment confirmation email sent!");
           },
-          body: JSON.stringify(paymentData),
-        })
-          .then((response) => response.json())
-          .then(() => {
-            clearCart(); // Clear the cart after submitting the order
-            toast.success("Payment successful");
-            navigate("/thank-you"); // Navigate to thank you page or confirmation
-          })
-          .catch((error) => console.error("Error saving payment:", error));
-      })
-      .catch((error) => console.error("Error saving order:", error));
+          (error) => {
+            console.error("Failed to send email:", error);
+            toast.error("Failed to send confirmation email.");
+          }
+        );
+
+      navigate("/thankyou");
+    } catch (error) {
+      console.error("Checkout error:", error);
+      toast.error("Failed to save order or payment.");
+    }
+  };
+
+  const generateBill = () => {
+    const doc = new jsPDF();
+    doc.setFontSize(20);
+    doc.text("Clumsy Carrot Pvt. Ltd.", 14, 20);
+    doc.setFontSize(12);
+    doc.text(`Invoice #: INV-${Date.now()}`, 14, 30);
+    doc.text(`Date: ${new Date().toLocaleDateString()}`, 14, 36);
+
+    doc.autoTable({
+      startY: 45,
+      head: [["#", "Product", "Quantity", "Price", "Total"]],
+      body: cartItems.map((item, index) => {
+        const price = parseFloat(item.price?.replace(/[^\d.]/g, ""));
+        return [
+          index + 1,
+          item.brand,
+          item.quantity,
+          `₹${price.toFixed(2)}`,
+          `₹${(item.quantity * price).toFixed(2)}`,
+        ];
+      }),
+      styles: { fontSize: 11, halign: "center" },
+      headStyles: { fillColor: [34, 139, 230], textColor: 255 },
+    });
+
+    const finalY = doc.lastAutoTable.finalY || 60;
+    doc.text(`Grand Total: ₹${totalPrice.toFixed(2)}`, 150, finalY + 10);
+    doc.text("Thank you for shopping with us!", 14, finalY + 30);
+    doc.save("Invoice.pdf");
   };
 
   return (
-    <div style={{ backgroundColor: "#f9fafb", paddingBottom: "4rem" }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      style={{ backgroundColor: "#f9fafb", paddingBottom: "4rem" }}
+    >
       <Headline />
       <Small_nav />
       <Title />
       <Navbar />
+
       <div style={{ padding: "2rem", maxWidth: "1120px", margin: "auto" }}>
         <h1
           style={{
@@ -736,75 +721,71 @@ const Checkout = () => {
           Checkout
         </h1>
 
-        <form onSubmit={handleSubmit}>
-          {/* Billing Info */}
-          <div
+        {/* Email Input */}
+        <div style={{ marginBottom: "1rem" }}>
+          <label htmlFor="email" style={{ fontWeight: "600" }}>
+            Your Email (for confirmation):
+          </label>
+          <input
+            type="email"
+            id="email"
+            value={userEmail}
+            onChange={(e) => setUserEmail(e.target.value)}
+            placeholder="Enter your email"
+            required
             style={{
-              background: "#fff",
-              padding: "2rem",
-              marginBottom: "2rem",
-              borderRadius: "0.5rem",
+              padding: "0.5rem",
+              width: "100%",
+              marginTop: "0.5rem",
+              borderRadius: "5px",
+              border: "1px solid #ccc",
             }}
-          >
-            <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-              Billing Information
-            </h2>
-            {[
-              "fullName",
-              "email",
-              "phone",
-              "address",
-              "city",
-              "zip",
-              "country",
-            ].map((field, idx) => (
-              <div key={idx} style={{ marginBottom: "1rem" }}>
-                <label style={{ fontWeight: "600" }}>
-                  {field.charAt(0).toUpperCase() + field.slice(1)}:
-                </label>
-                <input
-                  type="text"
-                  name={field}
-                  value={billingInfo[field]}
-                  onChange={handleInputChange}
-                  required
-                  style={{
-                    width: "100%",
-                    padding: "1rem",
-                    border: "1px solid #e0e0e0",
-                    borderRadius: "0.375rem",
-                    fontSize: "1rem",
-                  }}
-                />
-              </div>
-            ))}
-          </div>
+          />
+        </div>
 
-          {/* Order Summary */}
+        {/* Order Summary */}
+        <div
+          style={{
+            background: "#fff",
+            padding: "2rem",
+            marginBottom: "2rem",
+            borderRadius: "0.5rem",
+          }}
+        >
+          <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
+            Order Summary
+          </h2>
           <div
             style={{
-              background: "#fff",
-              padding: "2rem",
-              marginBottom: "2rem",
-              borderRadius: "0.5rem",
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "1rem",
             }}
           >
-            <h2 style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-              Order Summary
-            </h2>
             {cartItems.map((item, idx) => (
               <div
                 key={idx}
                 style={{
                   display: "flex",
-                  justifyContent: "space-between",
-                  padding: "1rem 0",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "1rem",
+                  background: "#f0f4f8",
+                  borderRadius: "8px",
                 }}
               >
-                <div>
-                  <p style={{ fontWeight: "600" }}>{item.name}</p>
-                  <p>Quantity: {item.quantity}</p>
-                </div>
+                <img
+                  src={item.image}
+                  alt={item.brand}
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                    objectFit: "cover",
+                    marginBottom: "1rem",
+                  }}
+                />
+                <p style={{ fontWeight: "600" }}>{item.brand}</p>
+                <p>Quantity: {item.quantity}</p>
                 <p>
                   ₹
                   {(
@@ -814,21 +795,49 @@ const Checkout = () => {
                 </p>
               </div>
             ))}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                fontWeight: "600",
-                marginTop: "1rem",
-              }}
-            >
-              <p>Total:</p>
-              <p>₹{totalPrice.toLocaleString()}</p>
-            </div>
           </div>
 
-          {/* PayPal Button */}
-          <div style={{ textAlign: "center", marginTop: "2rem" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontWeight: "600",
+              marginTop: "1rem",
+            }}
+          >
+            <p>Total:</p>
+            <p>₹{totalPrice.toLocaleString()}</p>
+          </div>
+        </div>
+
+        {/* Buttons */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "1rem",
+            marginTop: "2rem",
+            flexWrap: "wrap",
+          }}
+        >
+          <motion.button
+            onClick={generateBill}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            style={{
+              padding: "0.75rem 1.5rem",
+              backgroundColor: "#2563eb",
+              color: "#fff",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+              fontSize: "1rem",
+            }}
+          >
+            Generate Bill
+          </motion.button>
+
+          <div style={{ minWidth: "300px" }}>
             <PayPalButtons
               style={{ layout: "horizontal" }}
               createOrder={(data, actions) => {
@@ -836,7 +845,7 @@ const Checkout = () => {
                   purchase_units: [
                     {
                       amount: {
-                        value: totalPrice.toFixed(2), // Convert to USD if needed
+                        value: totalPrice.toFixed(2),
                         currency_code: "USD",
                       },
                     },
@@ -850,13 +859,13 @@ const Checkout = () => {
               }}
               onError={(err) => {
                 console.error("PayPal Checkout onError", err);
-                alert("Payment failed. Try again.");
+                toast.error("Payment failed. Please try again.");
               }}
             />
           </div>
-        </form>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

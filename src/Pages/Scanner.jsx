@@ -1,5 +1,5 @@
 // import React from "react";
-// import "./Scanner.css"; // Make sure to create the corresponding CSS file
+// import "./Scanner.css";
 
 // const Scanner = () => {
 //   return (
@@ -24,8 +24,9 @@
 // };
 
 // export default Scanner;
+
 import React from "react";
-import QRCode from "react-qr-code"; // Import the library
+import QRCode from "react-qr-code";
 import Headline from "../Components/Headline";
 import Small_nav from "../Components/Small_nav";
 import Title from "../Components/Title";
@@ -42,11 +43,12 @@ const Scanner = () => {
       <Navbar />
 
       <div style={{ textAlign: "center", padding: "2rem" }}>
+        <br></br>
+        <br></br>
         <h2>Join Our WhatsApp Group</h2>
         <p>Scan the QR code below to join our community on WhatsApp!</p>
         <div style={{ margin: "1rem auto" }}>
           <QRCode value={whatsappGroupLink} size={200} />{" "}
-          {/* Generate the QR code */}
         </div>
         <a
           href={whatsappGroupLink}
@@ -65,6 +67,8 @@ const Scanner = () => {
           Join via Link
         </a>
       </div>
+      <br></br>
+      <br></br>
       <Footer />
     </div>
   );
