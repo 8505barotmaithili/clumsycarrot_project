@@ -33,6 +33,7 @@ import Shoesdesc from "../descriptionpages/Shoesdesc";
 import Payment from "../Pages/Payment";
 import Scanner from "../Pages/Scanner";
 import Thankyou from "../Pages/Thankyou";
+import Review from "../Pages/Review";
 
 const Allroutes = () => {
   return (
@@ -70,6 +71,7 @@ const Allroutes = () => {
         <Route path="/payment" element={<Payment />} />
         <Route path="/scanner" element={<Scanner />} />
         <Route path="/thankyou" element={<Thankyou />} />
+        <Route path="/review" element={<Review />} />
       </Routes>
     </div>
   );

@@ -272,6 +272,11 @@ const Footer = () => {
           {" "}
           <h2> Join Our Whatsapp Group </h2>
         </Link>
+
+        <Link to={"/review"} style={{ color: "black" }}>
+          {" "}
+          <h2> Give review </h2>
+        </Link>
       </div>
     </div>
   );

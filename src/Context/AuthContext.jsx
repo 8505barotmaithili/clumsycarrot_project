@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { auth } from "../Services/firebase"; // Firebase auth import
 import { signOut } from "firebase/auth";
+import { useCart } from "./CartContext";
 
 const AuthContext = createContext();
 
@@ -26,7 +27,7 @@ export function AuthContextProvider({ children }) {
     signOut(auth)
       .then(() => {
         console.log("User logged out");
-        setUser(null); // Reset the user state after logout
+        setUser(null);
       })
       .catch((error) => {
         console.error("Error logging out:", error);
