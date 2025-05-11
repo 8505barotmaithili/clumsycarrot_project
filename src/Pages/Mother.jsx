@@ -26,9 +26,8 @@ const Mother = () => {
           />
         </Link>
         <h1 className="section-heading">Our Best Gifts</h1>
-        <Link to={"/homegift"}>
-          <Giftsection />
-        </Link>
+
+        <Giftsection />
       </div>
 
       <div className="gift-card-banner">

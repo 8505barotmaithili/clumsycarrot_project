@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./Recommand.css";
+import { Link } from "react-router-dom";
 
 const Recommand = () => {
   const [bridalItems, setBridalItems] = useState([]);
@@ -63,17 +64,13 @@ const Recommand = () => {
               onClick={() => handleViewItem(item)}
               className="recommand-card"
             >
-              <a
-                href={`/recommand/${item.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to={`/recommand/${item.id}`} rel="noopener noreferrer">
                 <img
                   src={item.image}
                   alt={item.name}
                   className="recommand-image"
                 />
-              </a>
+              </Link>
               <div className="recommand-description">
                 <h5>
                   {item.brand}
