@@ -50,6 +50,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Giftsection.css"; // Import the separate CSS file
+import { Link } from "react-router-dom";
 
 const Giftsection = () => {
   const [gifts, setGifts] = useState([]);
@@ -65,7 +66,9 @@ const Giftsection = () => {
     <div className="gift-section-container">
       {gifts.map((gift, index) => (
         <div key={index} className="gift-item">
-          <img src={gift.image} alt={gift.name} className="gift-image" />
+          <Link to={"homegift"}>
+            <img src={gift.image} alt={gift.name} className="gift-image" />
+          </Link>
           <h4 className="gift-name">{gift.name}</h4>
         </div>
       ))}

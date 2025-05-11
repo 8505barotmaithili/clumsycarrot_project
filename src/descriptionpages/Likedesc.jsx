@@ -9,6 +9,7 @@ import RecentlyViewedSlider from "../Components/Recentlyview";
 import Footer from "../Components/Footer";
 import { useCart } from "../Context/CartContext";
 import { useAuth } from "../Context/AuthContext";
+import "./Descmedia.css";
 
 const Likedesc = () => {
   const { id } = useParams();
@@ -22,7 +23,7 @@ const Likedesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/shoes/${id}`)
+    fetch(`http://localhost:3000/earings/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

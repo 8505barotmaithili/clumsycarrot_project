@@ -9,7 +9,7 @@ import Recommand from "../Components/Recommand";
 import RecentlyViewedSlider from "../Components/Recentlyview";
 import Footer from "../Components/Footer";
 
-const Shoespage = () => {
+const Handbagpage = () => {
   const [data, setData] = useState([]);
   const [sortOrder, setSortOrder] = useState("Featured");
   const [showSidebar, setShowSidebar] = useState(false);
@@ -24,7 +24,7 @@ const Shoespage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let url = "http://localhost:3000/shoes";
+        let url = "http://localhost:3000/handbags";
         const response = await axios.get(url);
 
         const enriched = response.data.map((item) => {
@@ -143,7 +143,6 @@ const Shoespage = () => {
       <Navbar />
 
       <br />
-      <br />
 
       <div className="container">
         <div className="header">
@@ -184,7 +183,7 @@ const Shoespage = () => {
         <div className="productGrid">
           {filteredData.map((item, idx) => (
             <div key={idx} className="productCard">
-              <Link to={`/shoes/${item.id}`}>
+              <Link to={`/handbagpage/${item.id}`}>
                 <img
                   src={item.image[0]}
                   alt={item.title}
@@ -413,4 +412,4 @@ const Shoespage = () => {
   );
 };
 
-export default Shoespage;
+export default Handbagpage;

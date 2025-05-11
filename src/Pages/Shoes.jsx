@@ -1,295 +1,181 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
 import Headline from "../Components/Headline";
 import Small_nav from "../Components/Small_nav";
 import Title from "../Components/Title";
 import Navbar from "../Components/Navbar";
-import Recommand from "../Components/Recommand";
-import RecentlyViewedSlider from "../Components/Recentlyview";
 import Footer from "../Components/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+
 import { Link } from "react-router-dom";
-const Shoes = () => {
-  const [guestGuide, setGuestGuide] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [label, setlabels] = useState([]);
-  const [happening, sethappenig] = useState([]);
-  const [bridalItems, setBridalItems] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/guestGuide")
-      .then((res) => setGuestGuide(res.data));
-    axios
-      .get("http://localhost:3000/categories")
-      .then((res) => setCategories(res.data));
-    axios
-      .get("http://localhost:3000/labels")
-      .then((res) => setlabels(res.data));
-
-    axios
-      .get("http://localhost:3000/happening")
-      .then((res) => sethappenig(res.data));
-
-    axios
-      .get("http://localhost:3000/trending")
-      .then((res) => setBridalItems(res.data));
-  }, []);
-
+const Women = () => {
   return (
-    <div>
+    <div style={{ fontFamily: "Arial, sans-serif" }}>
       <Headline />
       <Small_nav />
       <Title />
       <Navbar />
-      <div
-        style={{
-          display: "flex",
-          fontFamily: "Arial, sans-serif",
-          width: "90%",
-          margin: "auto",
-        }}
-      >
-        {/* Sidebar */}
 
-        <div style={{ width: "270px", padding: "30px" }}>
-          <p style={{ fontSize: "14px", color: "gray" }}>SHOES</p>
+      <div style={{ display: "flex", width: "96%", margin: "2% auto" }}>
+        {/* Sidebar */}
+        <div style={{ width: "270px", padding: "20px" }}>
+          <p style={{ fontSize: "14px", color: "gray" }}> / SHOES</p>
           <h2 style={{ fontSize: "24px", fontWeight: "bold" }}>SHOES</h2>
           <h4 style={{ fontSize: "14px", fontWeight: "bold" }}>
-            Shoes by Style
+            SPRING SALE: UP TO 65% OFF
           </h4>
-          <p>All Shoes</p>
-          <p>Ankle Boots & Booties</p>
-          <p>Athletic & Running</p>
-          <p> Boots</p>
-          <p>Bridal</p>
-          <p>Comfort</p>
-          <p>Evening & Wedding</p>
-          <p>Espadrilles</p>
-          <p> Flats</p>
-          <p> Mules & Clogs</p>
-          <p>Platforms</p>
-          <p>Pumps</p>
-          <p>Sandals</p>
-          <p>Slippers</p>
-          <p> Sneakers</p>
-          <p>Jumpsuits & Rompers</p>
-          <p>Lingerie, Bras, Panties & Hosiery</p>
-          <p>Loungewear</p>
-          <p>Shorts</p>
-          <p>Skirts</p>
-          <p>Matching Sets</p>
-          <p>Maternity</p>
-          <p>Pants & Leggings</p>
-          <p>Sleepwear & Robes</p>
-          <p>Suits & Separates</p>
-          <p>Sweaters</p>
-          <p>Swimsuits & Cover-Ups</p>
-          <p>Tops & Tees</p>
-          <p>DRESSES</p>
-          <p>Shop All</p>
-          <p>Cocktail & Party</p>
-          <p>Evening & Formal Gowns</p>
-          <p>Prom</p>
-          <p>Spring Dresses</p>
-          <p>Wedding Guest</p>
-          <p>White Dresses</p>
-          <p>SPRING TRENDS</p>
-          <p>Shop All</p>
-          <p>'60s Glam</p>
-          <p>Boho Everything</p>
-          <p>Pastels</p>
-          <p>Bubble Hem</p>
-          <p>Drop Waist</p>
-          <p>WHAT TO WEAR FOR</p>
-          <p>Bride to Be</p>
-          <p>Going Out</p>
-          <p>The Office</p>
-          <p>Vacation</p>
-          <p>Weddings</p>
-          <p>Weekend</p>
-          <p> New to Bloomingdale'</p>
-          <p>American Vintage</p>
-          <p>Camilla</p>
-          <p>CO</p>
-          <p> Guest in Residence</p>
-          <p>Jenni Kayne</p>
-          <p>NONCHALANT LABEL</p>
-          <p>New & Noteworthy</p>
-          <p> New Arrivals</p>
-          <p>Best Sellers</p>
-          <p>Mother's Day Gifts</p>
-          <p> Most Wanted Styles: Under $200</p>
-          <p>NEW: Emily Ratajkowski x Marella</p>
-          <p> The Linen Shop</p>
-          <p>Plus Size Clothing</p>
-          <p>Featured Designers</p>
-          <p>Alice and Olivia</p>
-          <p>AQUA</p>
-          <p>Buck Mason</p>
-          <p>Burberry</p>
-          <p>Cinq à Sept</p>
-          <p> FARM Rio</p>
-          <p> L'AGENCE</p>
-          <p>Maje</p>
-          <p> MOTHER</p>
-          <p>NIC+ZOE</p>
-          <p>rag & bone</p>
-          <p>REISS</p>
-          <p>Sandro </p>
-          <p>Self-Portrait</p>
-          <p>Teri Jon</p>
-          <p>Theory</p>
-          <p>Veronica Beard</p>
-          <p> Designer Boutique</p>
+          <div
+            style={{ marginTop: "20px", fontSize: "14px", lineHeight: "1.6" }}
+          >
+            {[
+              " Shop All",
+              "AQUA ",
+              "Loeffler Randall",
+              "Marc Fisher LTD",
+              "Michael Kors",
+              "Paul Green",
+              "Sam Edelman",
+              "Stuart Weitzman",
+              "Vibi Venezia",
+              "Shoes by Style",
+              "All Shoes",
+              "Ankle Boots & Booties",
+              "Athletic & Running",
+              "Boots",
+              "Bridal",
+              "Loeffler Randall",
+              "Marc Fisher LTD",
+              "Michael Kors",
+              "Paul Green",
+              "Sam Edelman",
+              "Stuart Weitzman",
+              "Vibi Venezia",
+              "Shoes by Style",
+              "All Shoes",
+              "Slides",
+              "What To Wear For",
+              "Weekend",
+              "Going Out",
+              "The Office",
+              "Vacation",
+              "Wedding",
+              "Bride To Be",
+              "Working Out",
+              "Featured Designers",
+              "Designers A-Z",
+              "Ferragamo",
+              "Jimmy Choo",
+              "Marc Fisher LTD.",
+              "Sam Edelman",
+              "Stuart Weitzman",
+            ].map((item, idx) => (
+              <p key={idx}>{item}</p>
+            ))}
+          </div>
         </div>
 
         {/* Main Content */}
-        <div style={{ flex: 1, padding: "30px" }}>
-          {/* Guest Guide Section */}
-
+        <div style={{ flexGrow: 1, textAlign: "center" }}>
+          {/* Hero Section */}
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: "20px",
               justifyContent: "center",
+              gap: "20px",
               marginBottom: "50px",
             }}
           >
-            <Link to="/shoespage">
-              <img src="https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK4_CC_JimmyChoo-Bridal-LPMain_VT_EG?resMode=sharp2&qlt=85,0&fmt=webp&wid=1080&hei=450"></img>
-            </Link>
+            {[
+              {
+                src: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK4_CC_JimmyChoo-Bridal-LPMain_VT_EG?resMode=sharp2&qlt=85,0&fmt=webp&wid=1080&hei=450",
+              },
+            ].map((item, idx) => (
+              <div key={idx} style={{ width: "90%", height: "500px" }}>
+                <Link to="/Shoespage">
+                  <img
+                    src={item.src}
+                    alt={item.label}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </Link>
+              </div>
+            ))}
           </div>
-          <br></br>
 
-          {/* Shop by Category Section */}
+          {/* Shop By Category */}
           <h2
             style={{
-              fontSize: "24px",
-              fontWeight: "bold",
-              marginBottom: "20px",
+              textAlign: "left",
+              margin: "30px 0 10px 2%",
+              marginLeft: "5%",
             }}
           >
             SHOP BY CATEGORY
           </h2>
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))",
-              gap: "30px",
-              textAlign: "center",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "16px",
+              padding: "0 2%",
+              marginLeft: "4%",
             }}
           >
-            {categories.map((item, index) => (
-              <div key={index}>
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  style={{
-                    width: "100%",
-                    maxWidth: "290px",
-                    margin: "0 auto",
-                    borderRadius: "4px",
-                  }}
-                />
-                <p style={{ marginTop: "10px", fontSize: "13px" }}>
-                  {item.title}
-                </p>
+            {[
+              {
+                label: "Sandals",
+                img: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_CC_SHOES_LP_REFRESH_Essentials_VT_4:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+              },
+              {
+                label: "Sneakers",
+                img: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_CC_SHOES_LP_REFRESH_Essentials_VT_11:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+              },
+              {
+                label: "Flats & Loafers",
+                img: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_CC_SHOES_LP_REFRESH_Essentials_VT_9:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+              },
+              {
+                label: "Pumps",
+                img: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_CC_SHOES_LP_REFRESH_Essentials_VT_13:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+              },
+              {
+                label: "Sweaters",
+                img: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_CC_SHOES_LP_REFRESH_Essentials_VT_7:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+              },
+              {
+                label: "Tops & Tees",
+                img: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_03WK1_CC_SHOES_LP_REFRESH_Essentials_VT_3:1x1?$icon_6_desktop$&resMode=sharp2&qlt=85,0&fmt=webp",
+              },
+              {
+                label: "Loungewear",
+                img: "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14418072_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+              },
+              {
+                label: "Skirts",
+                img: "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14580542_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+              },
+              {
+                label: "Sleepwear",
+                img: "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14305698_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=360&hei=450",
+              },
+            ].map((item, idx) => (
+              <div key={idx} style={{ width: "18%", minWidth: "150px" }}>
+                <Link to="" style={{ color: "black", textDecoration: "none" }}>
+                  <img
+                    src={`${item.img}`}
+                    alt={item.label}
+                    style={{ width: "100%", borderRadius: "8px" }}
+                  />
+                  <p>{item.label}</p>
+                </Link>
               </div>
             ))}
           </div>
-          <br></br>
-          <br></br>
-          {/* LABELS WE LOVE */}
-          <h2
-            style={{
-              fontSize: "24px",
-              fontWeight: "bold",
-              marginBottom: "20px",
-              textAlign: "center",
-            }}
-          >
-            LABELS WE LOVE
-          </h2>
-          <br></br>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(256px, 1fr))",
-              gap: "30px",
-              textAlign: "center",
-            }}
-          >
-            {label.map((item, index) => (
-              <div key={index}>
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  style={{
-                    width: "100%",
-                    maxWidth: "290px",
-                    margin: "0 auto",
-                    borderRadius: "4px",
-                  }}
-                />
-                <p style={{ marginTop: "10px", fontSize: "13px" }}>
-                  {item.title}
-                </p>
-              </div>
-            ))}
-          </div>
-          <br></br>
-          {/* HAPPENING NOW */}
-          <h2
-            style={{
-              fontSize: "24px",
-              fontWeight: "bold",
-              marginBottom: "20px",
-              textAlign: "center",
-            }}
-          >
-            HAPPENING NOW
-          </h2>
-          <br></br>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(256px, 1fr))",
-              gap: "30px",
-              textAlign: "center",
-            }}
-          >
-            {happening.map((item, index) => (
-              <div key={index}>
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  style={{
-                    width: "100%",
-                    maxWidth: "290px",
-                    margin: "0 auto",
-                    borderRadius: "4px",
-                  }}
-                />
-                <p style={{ marginTop: "10px", fontSize: "13px" }}>
-                  {item.title}
-                </p>
-              </div>
-            ))}
-          </div>
-          <br></br>
-          {/* trending */}
         </div>
       </div>
-      <Recommand />
-      <RecentlyViewedSlider />
+
       <Footer />
     </div>
   );
 };
 
-export default Shoes;
+export default Women;

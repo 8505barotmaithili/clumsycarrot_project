@@ -34,10 +34,16 @@ import Payment from "../Pages/Payment";
 import Scanner from "../Pages/Scanner";
 import Thankyou from "../Pages/Thankyou";
 import Review from "../Pages/Review";
+import Scrolltop from "../Pages/Scrolltop";
+import Homegift from "../Pages/Homegift";
+import Handbagpage from "../Pages/Handbagpage";
+import Handbagdesc from "../descriptionpages/Handbagdesc";
+import Userdashboard from "../Pages/Userdashboard";
 
 const Allroutes = () => {
   return (
     <div>
+      <Scrolltop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -72,6 +78,10 @@ const Allroutes = () => {
         <Route path="/scanner" element={<Scanner />} />
         <Route path="/thankyou" element={<Thankyou />} />
         <Route path="/review" element={<Review />} />
+        <Route path="/homegift" element={<Homegift />} />
+        <Route path="/handbagpage" element={<Handbagpage />} />
+        <Route path="/handbagpage/:id" element={<Handbagdesc />} />
+        <Route path="/Userdashboard" element={<Userdashboard />} />
       </Routes>
     </div>
   );

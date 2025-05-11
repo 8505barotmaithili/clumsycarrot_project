@@ -982,7 +982,7 @@
       "id": "9",
       "product_name": "Geranium Mini Dress",
       "images": [
-        "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14336946_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14514064_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
       ],
       "price": "INR 17,279.00"
     },
@@ -990,7 +990,7 @@
       "id": "10",
       "product_name": "Geranium Mini Dress",
       "images": [
-        "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14336946_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14509247_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
       ],
       "price": "INR 17,279.00"
     },
@@ -998,7 +998,7 @@
       "id": "11",
       "product_name": "Geranium Mini Dress",
       "images": [
-        "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14336946_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14077108_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
       ],
       "price": "INR 17,279.00"
     },
@@ -1014,7 +1014,7 @@
       "id": "13",
       "product_name": "Geranium Mini Dress",
       "images": [
-        "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14336946_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14547809_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
       ],
       "price": "INR 17,279.00"
     },
@@ -1022,7 +1022,7 @@
       "id": "14",
       "product_name": "Geranium Mini Dress",
       "images": [
-        "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14336946_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14336891_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
       ],
       "price": "INR 17,279.00"
     }
@@ -1236,6 +1236,68 @@
         }
       ],
       "id": 1
+    },
+    {
+      "items": [
+        {
+          "id": "10",
+          "image": [
+            "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14125970_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+          ],
+          "brand": "AQUA",
+          "title": "Pleated Floral Dress - Exclusive",
+          "price": "INR 915.00",
+          "rating": 5,
+          "tag": "Best Seller",
+          "length": "Midi",
+          "size": "xxxs",
+          "occasion": "wedding",
+          "selectedSize": "S",
+          "quantity": 1
+        },
+        {
+          "id": "11",
+          "image": [
+            "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14591424_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+          ],
+          "brand": "AQUA",
+          "title": "Pleated Floral Dress - Exclusive",
+          "price": "INR 12,915.00",
+          "rating": 5,
+          "tag": "Best Seller",
+          "length": "Maxi",
+          "size": "xxs",
+          "occasion": "Beach",
+          "selectedSize": "S",
+          "quantity": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "id": "3",
+          "image": [
+            "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/11976681_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+          ],
+          "brand": "AQUA",
+          "title": "Pleated Floral Dress - Exclusive",
+          "price": "INR 11,170.00",
+          "rating": 8,
+          "tag": "Best Seller",
+          "size": "xs",
+          "length": "Midi",
+          "color": "Green",
+          "occasion": "party",
+          "sleeveLength": "Long",
+          "images": [
+            "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/11976681_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+          ],
+          "quantity": 2
+        }
+      ],
+      "id": 3
     }
   ],
   "payments": [
@@ -1280,14 +1342,335 @@
       "transactionId": "22J45783DX942930L",
       "date": "2025-05-09T09:19:04.210Z",
       "id": 15
+    },
+    {
+      "totalPrice": "26745.00",
+      "paymentStatus": "Completed",
+      "transactionId": "91F47257X3565183L",
+      "date": "2025-05-09T11:37:20.440Z",
+      "id": 16
+    },
+    {
+      "totalPrice": "22340.00",
+      "paymentStatus": "Completed",
+      "transactionId": "91608720105052811",
+      "date": "2025-05-11T09:09:51.138Z",
+      "id": 17
     }
   ],
   "review": [
+  
     {
-      "name": "maithili ",
-      "text": "this is a very useful website for shopping",
-      "date": "2025-05-09T09:41:38.661Z",
-      "id": 1
+      "name": "maithili",
+      "email": "maithili123@gmail.com",
+      "text": "this is best website..",
+      "date": "2025-05-11T09:25:58.793Z",
+      "id": 3
+    }
+  ],
+  "homegift": [
+    {
+      "id": "1",
+      "product_name": "Versace",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/12686149_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 23,387.00"
+    },
+    {
+      "id": "2",
+      "product_name": "Baccarat",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/11844654_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 18,326.00"
+    },
+    {
+      "id": "3",
+      "product_name": "L'Objet",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/13489602_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "4",
+      "product_name": "Juliska",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14302170_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "5",
+      "product_name": "Lollia",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/13543010_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "6",
+      "product_name": "NEST New York",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14645742_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "7",
+      "product_name": "Nambé",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/13527313_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "8",
+      "product_name": "Baccarat",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/13307914_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "9",
+      "product_name": "Caraway",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/11257837_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "10",
+      "product_name": "Christofle",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/14080175_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "11",
+      "product_name": "Michael Aram",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/11935950_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "12",
+      "product_name": "L'Objet",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/12010037_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    },
+    {
+      "id": "13",
+      "product_name": "Ember",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/10624644_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "price": "INR 17,279.00"
+    }
+  ],
+  "handbags":[
+    {
+      "id": "1",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/13308752_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Floral Chiffon Flutter Sleeve Maxi Dress - Exclusive",
+      "price": "INR 10,297.00",
+      "rating": 7,
+      "tag": "Best Seller",
+      "size": "xxs",
+      "occasion": "Beach",
+      "length": "Midi",
+      "color": "Blue",
+      "sleeveLength": "Short",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/13308752_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "2",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14755437_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "PatBO",
+      "title": "Papillon Tulle Long Dress",
+      "price": "INR 56,723.00",
+      "size": "xxs",
+      "occasion": "wedding",
+      "length": "Maxi",
+      "color": "Blue",
+      "sleeveLength": "Sleeveless",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/14755437_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "3",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14556160_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 11,170.00",
+      "rating": 8,
+      "tag": "Best Seller",
+      "size": "xs",
+      "length": "Midi",
+      "color": "Green",
+      "occasion": "party",
+      "sleeveLength": "Long",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14556160_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "4",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14420221_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller",
+      "size": "s",
+      "length": "Mini",
+      "color": "White",
+      "occasion": "wedding",
+      "sleeveLength": "Short",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14420221_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "5",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/13708745_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 120.00",
+      "rating": 5,
+      "length": "Maxi",
+      "tag": "Best Seller",
+      "size": "m",
+      "color": "Red",
+      "occasion": "Beach",
+      "sleeveLength": "Sleeveless",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/13708745_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "6",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/13539595_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 300",
+      "rating": 5,
+      "length": "Mini",
+      "tag": "Best Seller",
+      "size": "l",
+      "occasion": "Beach",
+      "sleeveLength": "Short",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/13539595_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "7",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/10168848_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "length": "Maxi",
+      "tag": "Best Seller",
+      "size": "xl",
+      "occasion": "casual",
+      "sleeveLength": "Long",
+      "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/10168848_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "8",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14226138_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 2295.00",
+      "rating": 5,
+      "length": "Mini",
+      "tag": "Best Seller",
+      "size": "xxl",
+      "occasion": "casual",
+       "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14226138_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "9",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/13693348_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 10,915.00",
+      "rating": 5,
+      "tag": "Best Seller",
+      "size": "xxs",
+      "length": "Maxi",
+      "occasion": "party",
+       "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/13693348_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "10",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14368768_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 915.00",
+      "rating": 5,
+      "tag": "Best Seller",
+      "length": "Midi",
+      "size": "xxxs",
+      "occasion": "wedding",
+        "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14368768_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
+    },
+    {
+      "id": "11",
+      "image": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14490554_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ],
+      "brand": "AQUA",
+      "title": "Pleated Floral Dress - Exclusive",
+      "price": "INR 12,915.00",
+      "rating": 5,
+      "tag": "Best Seller",
+      "length": "Maxi",
+      "size": "xxs",
+      "occasion": "Beach",
+        "images": [
+        "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/14490554_fpx.tif?$2014_BROWSE_FASHION$&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=342&hei=428"
+      ]
     }
   ]
 }

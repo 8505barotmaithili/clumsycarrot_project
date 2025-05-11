@@ -4,13 +4,14 @@ import "./Review.css";
 
 const Review = () => {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [text, setText] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!name || !text) {
+    if (!name || !email || !text) {
       setMessage("Please fill out all fields.");
       return;
     }
@@ -18,6 +19,7 @@ const Review = () => {
     try {
       const reviewData = {
         name,
+        email,
         text,
         date: new Date().toISOString(),
       };
@@ -25,9 +27,11 @@ const Review = () => {
       await axios.post("http://localhost:3000/review", reviewData);
       setMessage("Thank you for your review!");
       setName("");
+      setEmail("");
       setText("");
     } catch (error) {
       console.error(error);
+      setMessage("There was an error submitting your review.");
     }
   };
 
@@ -40,6 +44,12 @@ const Review = () => {
           placeholder="Your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="email"
+          placeholder="Your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           placeholder="Write your review..."

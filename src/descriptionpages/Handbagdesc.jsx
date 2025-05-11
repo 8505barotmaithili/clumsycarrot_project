@@ -8,9 +8,9 @@
 // import RecentlyViewedSlider from "../Components/Recentlyview";
 // import Footer from "../Components/Footer";
 // import { useCart } from "../Context/CartContext";
-// import { useAuth } from "../Context/AuthContext"; // Auth Context
+// import { useAuth } from "../Context/AuthContext";
 
-// const Beachdesc = () => {
+// const Handbagdesc = () => {
 //   const { id } = useParams();
 //   const [product, setProduct] = useState(null);
 //   const [mainImage, setMainImage] = useState("");
@@ -22,11 +22,11 @@
 //   const navigate = useNavigate();
 
 //   useEffect(() => {
-//     fetch(`http://localhost:3000/data/${id}`)
+//     fetch(` http://localhost:3000/handbags/${id}`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         setProduct(data);
-//         setMainImage(data.image?.[0] || data.image);
+//         setMainImage(data.images?.[0] || data.images);
 //         setLoading(false);
 //       })
 //       .catch(() => setLoading(false));
@@ -36,19 +36,14 @@
 
 //   const sizes = ["XXS", "XS", "S", "M", "L", "XL"];
 
-//   const handleAddToCart = () => {
+//   const handleclick = () => {
 //     if (!user) {
 //       alert("Please login to add items to your cart.");
 //       navigate("/login");
 //       return;
 //     }
 
-//     if (!selectedSize) {
-//       alert("Please select a size before adding to cart.");
-//       return;
-//     }
-
-//     addToCart({ ...product, selectedSize });
+//     addToCart(product);
 //     alert("Item added to cart!");
 //   };
 
@@ -58,6 +53,7 @@
 //       <Small_nav />
 //       <Title />
 //       <Navbar />
+//       <hr></hr>
 
 //       <div
 //         style={{
@@ -67,7 +63,7 @@
 //           marginTop: "3%",
 //         }}
 //       >
-//         {/* Left: Images */}
+//         {/* Left Section - Thumbnails + Main Image + 'Complete the Look' */}
 //         <div style={{ display: "flex" }}>
 //           <div
 //             style={{
@@ -91,7 +87,7 @@
 //                 msOverflowStyle: "none",
 //               }}
 //             >
-//               {product.image?.map((img, i) => (
+//               {product.images?.map((img, i) => (
 //                 <img
 //                   key={i}
 //                   src={img}
@@ -123,6 +119,7 @@
 //             </div>
 //           </div>
 
+//           {/* Main Image */}
 //           <div style={{ position: "relative", marginLeft: "30%" }}>
 //             <img
 //               src={mainImage}
@@ -165,20 +162,22 @@
 //           </div>
 //         </div>
 
-//         {/* Right: Product Details */}
+//         {/* Right Section - Product Details */}
 //         <div style={{ width: "100%", marginLeft: "19%" }}>
-//           <h3>{product.product_name}</h3>
+//           <h2 style={{ fontWeight: "bold" }}>{product.brand}</h2>
+//           <h3>{product.name}</h3>
 //           <p style={{ fontWeight: "bold", fontSize: "18px" }}>
-//             {product.price}
+//             INR {product.price}
 //           </p>
 //           <p>
 //             <strong>COLOR:</strong> {product.color || "Off-white"}
 //           </p>
 //           <p>
 //             <strong>SIZE:</strong>{" "}
-//             <span>{selectedSize || "Please select"}</span>
+//             <span style={{ marginLeft: "10px", fontWeight: "normal" }}>
+//               {selectedSize || "Please select"}
+//             </span>
 //           </p>
-
 //           <div style={{ display: "flex", gap: "10px", margin: "10px 0" }}>
 //             {sizes.map((size) => (
 //               <div
@@ -198,9 +197,7 @@
 //               </div>
 //             ))}
 //           </div>
-
 //           <button
-//             onClick={handleAddToCart}
 //             style={{
 //               background: "black",
 //               color: "white",
@@ -211,10 +208,12 @@
 //               cursor: "pointer",
 //               margin: "20px 0",
 //             }}
+//             onClick={handleclick}
 //           >
 //             ADD TO BAG
 //           </button>
 
+//           {/* Product details */}
 //           <h2 style={{ marginTop: "40px" }}>Product details</h2>
 //           <div
 //             style={{
@@ -224,28 +223,42 @@
 //               gap: "30px",
 //             }}
 //           >
-//             <div style={{ width: "50%" }}>
+//             <div style={{ height: "400px", width: "50%" }}>
 //               <h4>Features</h4>
 //               <ul>
 //                 <li>Small huggie hoops with inner and outer diamond pavé</li>
 //                 <li>Diamonds: 0.50 ct. t.w.; Color clarity: HI/I1I2</li>
 //                 <li>14K white gold</li>
 //                 <li>0.6"L</li>
+//                 <li>
+//                   Almost all gemstones and blue and black diamonds have been
+//                   treated to enhance their beauty and require special care
+//                 </li>
 //                 <li>Photo may have been enlarged and/or enhanced</li>
+//                 <li>
+//                   All gemstone carat weights (ct. t.w.) are approximate;
+//                   variance may be 0.05 carat.
+//                 </li>
+//                 <li>
+//                   White gold is surface-coated with rhodium to enhance metal
+//                   color and shine; it may wear off over time requiring
+//                   replating.
+//                 </li>
 //               </ul>
 //             </div>
-//             <div style={{ width: "50%" }}>
-//               <h4>About the brand</h4>
+//             <div style={{ height: "400px", width: "50%" }}>
+//               <h4>about the brand</h4>
 //               <p>
 //                 For over three decades, our buyers have traveled the world,
 //                 partnering with leading designers and skilled artisans to craft
-//                 exquisite fine jewelry befitting the Bloomingdale's name...
+//                 exquisite fine jewelry befitting the Bloomingdale's name. The
+//                 result is a covetable collection that's meant to be worn, mixed,
+//                 layered, and made your own...
 //               </p>
 //             </div>
 //           </div>
 //         </div>
 //       </div>
-
 //       <Recommand />
 //       <RecentlyViewedSlider />
 //       <Footer />
@@ -253,7 +266,7 @@
 //   );
 // };
 
-// export default Beachdesc;
+// export default Handbagdesc;
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Headline from "../Components/Headline";
@@ -266,7 +279,8 @@ import Footer from "../Components/Footer";
 import { useCart } from "../Context/CartContext";
 import { useAuth } from "../Context/AuthContext";
 import "./Descmedia.css";
-const Beachdesc = () => {
+
+const Handbagdesc = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState("");
@@ -278,11 +292,11 @@ const Beachdesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/data/${id}`)
+    fetch(`http://localhost:3000/handbags/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
-        setMainImage(data.image?.[0] || data.image);
+        setMainImage(data.images?.[0] || data.images);
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -292,19 +306,14 @@ const Beachdesc = () => {
 
   const sizes = ["XXS", "XS", "S", "M", "L", "XL"];
 
-  const handleAddToCart = () => {
+  const handleclick = () => {
     if (!user) {
       alert("Please login to add items to your cart.");
       navigate("/login");
       return;
     }
 
-    if (!selectedSize) {
-      alert("Please select a size before adding to cart.");
-      return;
-    }
-
-    addToCart({ ...product, selectedSize });
+    addToCart(product);
     alert("Item added to cart!");
   };
 
@@ -314,13 +323,14 @@ const Beachdesc = () => {
       <Small_nav />
       <Title />
       <Navbar />
+      <hr />
 
       <div className="recomdesc-container">
-        {/* Left Section */}
+        {/* Left Section - Thumbnails + Main Image + 'Complete the Look' */}
         <div className="recomdesc-left">
           <div className="thumbnails-wrapper">
             <div className="thumbnails" id="thumbnail-scroll">
-              {product.image?.map((img, i) => (
+              {product.images?.map((img, i) => (
                 <img
                   key={i}
                   src={img}
@@ -331,18 +341,27 @@ const Beachdesc = () => {
               ))}
             </div>
             <div
-              className="thumbnail-scroll-down"
               onClick={() => {
                 const container = document.getElementById("thumbnail-scroll");
                 container.scrollBy({ top: 100, behavior: "smooth" });
               }}
+              className="thumbnail-scroll-down"
             >
               ⌄
             </div>
           </div>
 
+          {/* Main Image */}
           <div className="main-image-container">
-            <img src={mainImage} alt={product.name} className="main-image" />
+            <img
+              src={mainImage}
+              alt={product.name}
+              className="main-image"
+              onMouseOver={(e) =>
+                (e.currentTarget.style.transform = "scale(1.1)")
+              }
+              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+            />
             <div className="complete-look">
               COMPLETE
               <br />
@@ -351,18 +370,17 @@ const Beachdesc = () => {
           </div>
         </div>
 
-        {/* Right Section */}
+        {/* Right Section - Product Details */}
         <div className="recomdesc-right">
-          <h3>{product.product_name}</h3>
-          <p className="price">{product.price}</p>
+          <h2>{product.brand}</h2>
+          <h3>{product.name}</h3>
+          <p className="price">INR {product.price}</p>
           <p>
             <strong>COLOR:</strong> {product.color || "Off-white"}
           </p>
           <p>
-            <strong>SIZE:</strong>{" "}
-            <span>{selectedSize || "Please select"}</span>
+            <strong>SIZE:</strong> {selectedSize || "Please select"}
           </p>
-
           <div className="size-options">
             {sizes.map((size) => (
               <div
@@ -376,12 +394,12 @@ const Beachdesc = () => {
               </div>
             ))}
           </div>
-
-          <button className="add-to-bag" onClick={handleAddToCart}>
+          <button className="add-to-bag" onClick={handleclick}>
             ADD TO BAG
           </button>
 
-          <h2 style={{ marginTop: "40px" }}>Product details</h2>
+          {/* Product details */}
+          <h2>Product details</h2>
           <div className="product-details">
             <div className="features">
               <h4>Features</h4>
@@ -390,7 +408,20 @@ const Beachdesc = () => {
                 <li>Diamonds: 0.50 ct. t.w.; Color clarity: HI/I1I2</li>
                 <li>14K white gold</li>
                 <li>0.6"L</li>
+                <li>
+                  Almost all gemstones and blue and black diamonds have been
+                  treated to enhance their beauty and require special care
+                </li>
                 <li>Photo may have been enlarged and/or enhanced</li>
+                <li>
+                  All gemstone carat weights (ct. t.w.) are approximate;
+                  variance may be 0.05 carat.
+                </li>
+                <li>
+                  White gold is surface-coated with rhodium to enhance metal
+                  color and shine; it may wear off over time requiring
+                  replating.
+                </li>
               </ul>
             </div>
             <div className="brand-info">
@@ -398,13 +429,14 @@ const Beachdesc = () => {
               <p>
                 For over three decades, our buyers have traveled the world,
                 partnering with leading designers and skilled artisans to craft
-                exquisite fine jewelry befitting the Bloomingdale's name...
+                exquisite fine jewelry befitting the Bloomingdale's name. The
+                result is a covetable collection that's meant to be worn, mixed,
+                layered, and made your own...
               </p>
             </div>
           </div>
         </div>
       </div>
-
       <Recommand />
       <RecentlyViewedSlider />
       <Footer />
@@ -412,4 +444,4 @@ const Beachdesc = () => {
   );
 };
 
-export default Beachdesc;
+export default Handbagdesc;

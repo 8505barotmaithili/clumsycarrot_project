@@ -29,8 +29,7 @@ const Home = () => {
       <Banner />
       <Recommand />
       <br></br>
-      <br></br>
-      <br></br>
+
       <Motherday />
 
       <Giftsection />

@@ -989,6 +989,7 @@
 // };
 
 // export default Women;
+
 import Headline from "../Components/Headline";
 import Small_nav from "../Components/Small_nav";
 import Title from "../Components/Title";
