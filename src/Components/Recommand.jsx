@@ -64,7 +64,7 @@ const Recommand = () => {
               className="recommand-card"
             >
               <a
-                href={`/recomdesc/${item.id}`}
+                href={`/recommand/${item.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
