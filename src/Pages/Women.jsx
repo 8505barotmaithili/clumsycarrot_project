@@ -739,9 +739,18 @@ const Women = () => {
             }}
           >
             {[
-              { src: "/src/assets/first.png", label: "BEACH & DESTINATION" },
-              { src: "/src/assets/second.png", label: "COCKTAIL" },
-              { src: "/src/assets/third.png", label: "FORMAL & BLACK TIE" },
+              {
+                src: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_05WK1_RTW_GRADUATION:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp-alpha",
+                label: "BEACH & DESTINATION",
+              },
+              {
+                src: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_05WK1_RTW_WEDDINGGUEST:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp-alpha",
+                label: "COCKTAIL",
+              },
+              {
+                src: "https://images.bloomingdalesassets.com/is/image/MacysInc/2025_05WK1_RTW_COCKTAIL_PARTY:4x5?$subad_pool_4_desktop_4x5$&resMode=sharp2&qlt=85,0&fmt=webp-alpha",
+                label: "FORMAL & BLACK TIE",
+              },
             ].map((item, idx) => (
               <div key={idx} style={{ width: "30%", maxWidth: "350px" }}>
                 <Link to="/guestdesc">
