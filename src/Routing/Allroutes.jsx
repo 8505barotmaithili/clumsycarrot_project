@@ -59,7 +59,7 @@ const Allroutes = () => {
         <Route path="/designers" element={<Designer />} />
         <Route path="/editorial" element={<Editorial />} />
         <Route path="/gifts" element={<Gifts />} />
-        <Route path="/recomdesc/:id" element={<Recomdesc />} />
+        <Route path="/recommand/:id" element={<Recomdesc />} />
         <Route path="/shopcart" element={<Shopcart />} />
         <Route path="/services" element={<Services />} />
         <Route path="/guestdesc" element={<Guestdesc />} />
