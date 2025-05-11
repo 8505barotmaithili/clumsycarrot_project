@@ -23,7 +23,7 @@ const Likedesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/earings/${id}`)
+    fetch(`https://clumsy-server.onrender.com/earings/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

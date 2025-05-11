@@ -22,7 +22,7 @@ const Bridaldesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(` http://localhost:3000/bridal/${id}`)
+    fetch(`https://clumsy-server.onrender.com/bridal/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

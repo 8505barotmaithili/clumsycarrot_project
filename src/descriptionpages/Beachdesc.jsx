@@ -278,7 +278,7 @@ const Beachdesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/data/${id}`)
+    fetch(`https://clumsy-server.onrender.com/data/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

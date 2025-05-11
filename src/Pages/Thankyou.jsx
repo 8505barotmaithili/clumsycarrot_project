@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ThankYou.css"; // optional external CSS for extra styling
+import "./ThankYou.css";
 
 const Thankyou = () => {
   return (

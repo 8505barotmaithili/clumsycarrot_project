@@ -13,7 +13,7 @@ const Bridetobe = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/bridetobe")
+      .get("https://clumsy-server.onrender.com/bridetobe")
       .then((res) => {
         setServices(res.data);
       })

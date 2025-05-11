@@ -39,17 +39,23 @@ const Checkout = () => {
     };
 
     try {
-      const orderRes = await fetch("http://localhost:3000/orders", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(orderData),
-      });
+      const orderRes = await fetch(
+        "https://clumsy-server.onrender.com/orders",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(orderData),
+        }
+      );
 
-      const paymentRes = await fetch("http://localhost:3000/payments", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(paymentData),
-      });
+      const paymentRes = await fetch(
+        "https://clumsy-server.onrender.com/payments",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(paymentData),
+        }
+      );
 
       clearCart();
 

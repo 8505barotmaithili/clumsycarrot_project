@@ -14,7 +14,7 @@ const Navbar = () => {
       {/* Toggler button visible only on mobile */}
       <div className="navbar-header">
         <button className="navbar-toggler" onClick={toggleMenu}>
-          &#9776; {/* Unicode hamburger menu */}
+          &#9776;
         </button>
       </div>
 

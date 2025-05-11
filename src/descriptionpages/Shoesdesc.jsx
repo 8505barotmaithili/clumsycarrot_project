@@ -22,7 +22,7 @@ const Shoesdesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(` http://localhost:3000/shoes/${id}`)
+    fetch(`https://clumsy-server.onrender.com/shoes/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

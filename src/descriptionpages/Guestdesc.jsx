@@ -25,7 +25,7 @@ const Guestdesc = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let url = "http://localhost:3000/data";
+        let url = "https://clumsy-server.onrender.com/data";
         const response = await axios.get(url);
 
         const enriched = response.data.map((item) => {

@@ -8,7 +8,7 @@ import Recommand from "../Components/Recommand";
 import RecentlyViewedSlider from "../Components/Recentlyview";
 import Footer from "../Components/Footer";
 import { useCart } from "../Context/CartContext";
-import { useAuth } from "../Context/AuthContext"; // Auth Context
+import { useAuth } from "../Context/AuthContext";
 
 const Offerdesc = () => {
   const { id } = useParams();
@@ -22,7 +22,7 @@ const Offerdesc = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/offer/${id}`)
+    fetch(`https://clumsy-server.onrender.com/offer/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

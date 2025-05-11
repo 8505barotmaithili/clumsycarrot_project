@@ -13,7 +13,7 @@ const Homegift = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/homegift")
+      .get("https://clumsy-server.onrender.com/homegift")
       .then((res) => {
         setServices(res.data);
       })

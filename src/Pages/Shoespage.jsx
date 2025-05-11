@@ -24,7 +24,7 @@ const Shoespage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let url = "http://localhost:3000/shoes";
+        let url = "https://clumsy-server.onrender.com/shoes";
         const response = await axios.get(url);
 
         const enriched = response.data.map((item) => {

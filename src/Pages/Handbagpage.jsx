@@ -24,7 +24,7 @@ const Handbagpage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let url = "http://localhost:3000/handbags";
+        let url = "https://clumsy-server.onrender.com/handbags";
         const response = await axios.get(url);
 
         const enriched = response.data.map((item) => {

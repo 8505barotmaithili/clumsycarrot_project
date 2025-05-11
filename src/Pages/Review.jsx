@@ -24,7 +24,7 @@ const Review = () => {
         date: new Date().toISOString(),
       };
 
-      await axios.post("http://localhost:3000/review", reviewData);
+      await axios.post("https://clumsy-server.onrender.com/review", reviewData);
       setMessage("Thank you for your review!");
       setName("");
       setEmail("");

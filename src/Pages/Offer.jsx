@@ -13,7 +13,7 @@ const Offer = () => {
 
   useEffect(() => {
     axios
-      .get(" http://localhost:3000/offer")
+      .get("https://clumsy-server.onrender.com/offer")
       .then((res) => {
         setServices(res.data);
       })
